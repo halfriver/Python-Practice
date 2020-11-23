@@ -1,4 +1,5 @@
 # gitignore
 
-input/
-output/
+/inputfiles
+/outputfiles
+/__pycache__
