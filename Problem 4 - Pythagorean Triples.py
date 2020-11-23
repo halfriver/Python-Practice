@@ -1,7 +1,12 @@
 # Pythagorean Triples Checker
-# 03 Sept 2019
+ # Allows the user to input the sides of any triangle in any order.
+ # Return whether the triangle is a Pythagorean Triple or not.
+ # Loop the program so the user can use it more than once without having to restart the program.
 
-num = [int(x) for x in input("Enter 3 numbers, dilimited by a comma and space after each. Example: 1, 2, 3 \n").split(", ")]
+# Original: 03 Sept 2019
+# Edited: 24 November 2020
+
+num = [int(x) for x in input("Enter 3 numbers, dilimited by a space after each. Example: 1, 2, 3 \n").split(" ")]
 
 # set the three values to a, b, and c such that c equals the largest number
 c_index = num.index(max(num))
