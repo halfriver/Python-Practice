@@ -2,46 +2,62 @@
 # 4 Nov 2019
 
 from random import randint
+from Deck import Deck
 
-
-class Deck:
-    
-    def __init__(self):
-        self.face = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
-        self.suit = [" of Hearts", " of Diamonds", " of Clubs", " of Spades"]
-        self.shuffle()
-
-    # creates a deck, each list within the deck list signifies one card, identified by 3 numbers (face, suit, value)
-    def shuffle(self):
-        self.deck = []
-        for card in range(52):
-            suit_v = (card % 4)
-            face_v = (card % 13)
-            if face_v > 9:
-                value = 10
-            else:
-                value = face_v + 1
-            self.deck.append([suit_v, face_v, value])
-
-    # draw a card from the deck
-    def draw(self):
-        drawn = self.deck[randint(0, len(self.deck))]
-        temp = [x for x in drawn]
-        self.deck.remove(drawn)
-        print(temp)
-        return (self.face[temp[1]] + self.suit[temp[0]], temp[2])
-
+print("Welcome to 21.")
 mydeck = Deck()
 
-card = mydeck.draw()
-print("You drew a " + card[0] + " with a value of " + str(card[1]) + ".")
-
-
-'''
-print("Welcome to Blackjack.") 
-
+# repeatable game
 while True:
-    shuffle()   
-    draw(deck)
+    # game setup: dealer draw two, player draw one, ask for input
+    player = []
+    dealer = []
+    player_value = 0
+    dealer_value = 0
+    for x in range(2):
+        dealer.append(mydeck.draw())
+        player.append(mydeck.draw())
+        dealer_value += dealer[x][1]
+        player_value += player[x][1]
+    print("\nThe dealer has one card face down, one card face up. You can see a" + dealer[1][0] + ".\nYour cards are a" + player[0][0] + " and a" + player[1][0] + " for a total of " + str(player_value) + " points.\n")
 
-'''
+    # rinse and repeat until the player stops drawing cards
+    while True:
+        cont = input("Stay or Hit?\n").lower()
+        if cont == "stay":
+            print("\nThe dealer flips the face-down card. It's a" + dealer[0][0] + " for a total of " + str(dealer_value) + " points.\n")
+            break
+        elif cont == "hit":
+            player.append(mydeck.draw())
+            player_value += player[(len(player)-1)][1]
+            print("\nYou drew a" + player[(len(player)-1)][0] + ". Your point total is now " + str(player_value) + ".")
+            if player_value >= 21:
+                break
+        else:
+            print("\nPlease try again:")
+
+    # once the player finishes drawing, figure out if they won or not
+    if player_value > 21:
+        print("That's a bust! Sorry, you lose!\n")
+    # while the dealer is losing, they will always hit until they win or bust
+    else:
+        while dealer_value <= player_value and dealer_value != 21:
+            dealer.append(mydeck.draw())
+            dealer_value += dealer[(len(dealer)-1)][1]
+            print("The dealer draws another card, a" + dealer[(len(dealer)-1)][0] + ". His total is now at " + str(dealer_value) + " points.\n")
+        if dealer_value == player_value:
+            print("You and the dealer both scored a " + str(dealer_value) + ". It's a draw!\n")
+        elif player_value == 21:
+            print("Congrats! You got exactly 21! You won!\n")
+        elif dealer_value > 21:
+            print("The dealer got a total score of " + str(dealer_value) + " and you got a total score of " + str(player_value) + ". You won!\n")
+        elif dealer_value <= 21:
+            print("The dealer got a total score of " + str(dealer_value) + " and you got a total score of " + str(player_value) + ". You lost!\n")
+
+    # play again?
+    again = input("Would you like to play again? Yes or no?\n").lower()
+    if again == "no":
+        break
+    mydeck.shuffle()
+    
+   
