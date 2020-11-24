@@ -10,7 +10,7 @@ def is_vowel(letter):
         return True
 
 # get file input and write it to a list
-fname = input("What file would you like to read from?\n")
+fname = "inputfiles/madlibs.txt"
 with open(fname, "r") as f:
     text = [line for line in f]
 
