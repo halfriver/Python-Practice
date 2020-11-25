@@ -90,7 +90,6 @@ mean = mean(num, deci)
 median = median(num)
 mode = mode(num)
 
-
 print("Mean: " + str(mean),
       "Median: " + str(median),
       "Mode: " + str(mode) + " which occurs times")

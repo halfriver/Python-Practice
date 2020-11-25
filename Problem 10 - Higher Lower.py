@@ -1,5 +1,11 @@
-# 16 Sept 2019
-# Higher-Lower Guessing Game
+# Problem 10: Higher-Lower Guessing Game
+ # Create three functions that allow the user to find the mean, median, and mode of a list of numbers.
+ # In the mean function, give the user a way to select how many decimal places they want the answer to be rounded to.
+ # If there is an even number of numbers in the list, return both numbers that could be considered the median.
+ # If there are multiple modes, return all of them.
+
+# Original: 16 Sept 2019
+# Edited: 25 November 2020
 
 from random import randint
 
