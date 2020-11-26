@@ -8,9 +8,10 @@
 # Edited: 25 November 2020
 
 import math
+from collections import Counter
 
 def mean(numlist, decimals):
-    # new function
+    # new function, return
     return round(sum(numlist)/len(numlist), decimals)
 ''' ORIGINAL
     mean = 0
@@ -21,17 +22,18 @@ def mean(numlist, decimals):
 '''
 
 def median(numlist):
-    # new function
+    # new function, returns list of 1 or 2 integers
+    numlist = sorted(numlist)
     # if number of list items is even, return both numbers at the median
     if len(numlist) % 2 == 0:
         # if both median numbers are the same, only report one
         if numlist[len(numlist)//2] == numlist[(len(numlist)//2)+1]:
-            return numlist[len(numlist)//2]
+            return [numlist[len(numlist)//2]]
         else:
             return [numlist[len(numlist)//2], numlist[(len(numlist)//2)+1]]
     # if number of list items is odd, return the one median
     else:
-        return numlist[(len(numlist)-1)//2]
+        return [numlist[(len(numlist)-1)//2]]
 ''' ORIGINAL
     median = 0
     if len(num) % 2 == 0:
@@ -45,14 +47,26 @@ def median(numlist):
 '''
 
 def mode(numlist):
-    # new function
-    """count = 0
-    mlist = []
-
-    for i in range(len(numlist)):"""
-    return max(set(numlist), key=numlist.count)
-        
-    
+    # new function, returns dictionary
+    # keeps track of max frequency
+    mcount = 0
+    # keeps track of (max frequency: mode(s))
+    mdict = {}
+    # creates dictionary of items in numlist and the frequency of each
+    counter = Counter(numlist)
+    for x in counter:
+        # if item in list has frequency greater than max, set its occurrence to max and set
+        if counter[x] > mcount:
+            mcount = counter[x]
+            mdict = {mcount: [x]}
+        # if equal to max, include it in dictionary of modes
+        elif counter[x] == mcount:
+            mdict[mcount].append(x)
+    if len(counter) == len(mdict[mcount]):
+        return ""
+    else:
+        return mdict
+      
 ''' ORIGINAL
     mode_count = 1
     mode = []
@@ -86,15 +100,27 @@ while True:
     except:
         deci = input("Please input a single integer.\n").replace(" ", "")
 
-mean = mean(num, deci)
-median = median(num)
-mode = mode(num)
+# print mean
+print("Mean: " + str(mean(num, deci)))
 
-print("Mean: " + str(mean),
-      "Median: " + str(median),
-      "Mode: " + str(mode) + " which occurs times")
+# print median
+med = ""
+for x in median(num):
+      med += str(x)
+      if x != median(num)[len(median(num))-1]:
+          med += ", "
+print("Median(s): " + med)
 
-
-
-
-
+# print mode
+mod = ""
+freq = ""
+if mode(num) == "":
+    print("Mode(s): NA")
+else:
+    for x in mode(num):
+        freq = str(x)
+        for y in mode(num)[x]:
+            mod += str(y)
+            if y != mode(num)[x][len(mode(num)[x])-1]:
+                mod += ", "
+    print("Mode(s): " + mod + ", which occurs " + freq + " times")
