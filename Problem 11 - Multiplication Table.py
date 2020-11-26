@@ -1,7 +1,12 @@
-# 12 Oct 2019
-# Multiplication Tables
+# Problem 11: Multiplication Tables
+ # Create a program that prints out a multiplication table for the numbers 1 through 9.
+ # It should include the numbers 1 through 9 on the top and left axises, and it should be relatively easy to find the product of two numbers.
 
-n = int(input("I will generate a multiplication table. Give me a number and I'll make a table with that many rows and columns. \n"))
+# Original: 12 Oct 2019
+# Edited: 25 November 2020
+
+
+n = int(input("Give me a number and I'll make a multiplication table with that many rows and columns. \n"))
 
 def table(n):
     table = [[" "]]
