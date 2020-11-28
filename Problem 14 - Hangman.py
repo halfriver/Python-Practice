@@ -40,15 +40,13 @@ while True:
         # input handling
         while True:
             guess = input("Guess a letter. Or, if you feel lucky, guess the word.\n").lower()
-            try:
-                int(guess)
-                print("Numerals do not appear in these words.")
-                continue
-            except ValueError:
+            if guess.isalpha():
                 if len(guess) !=1 and len(guess) < 5:
                     print("If you're not guessing the word, then you must enter single letters.")
                     continue
-            break
+                break
+            else:
+                print("This is not a valid guess. Try again.")
         
         # if the guess is incorrect
         if ((len(guess) == 1 and guess not in word) or (len(guess) > 1 and guess != word)) and guess not in wrong:
