@@ -48,7 +48,9 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |40|[Palindrome](#palindrome)|:heavy_check_mark:|
 |41|N Queens Validator*|:construction:|
 |42|Image Converter*|:construction:|
+
 \**Additional Projects (not included in original list)*
+
 |Not Yet Started|Work in Progress|Completed|
 |:---:|:---:|:---:|
 ||:construction:|:heavy_check_mark:|
