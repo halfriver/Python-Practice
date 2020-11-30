@@ -1,5 +1,11 @@
-# MadLibs
-# 27 November 2019
+# Problem 7: MadLibs Story-Maker
+ # Create a Mad Libs style game, where the program asks the user for certain types of words, and then prints out a story with the words that the user inputted.
+ # The story doesn't have to be too long, but it should have some sort of story line.
+ # If the user has to put in a name, change the first letter to a capital letter.
+ # Change the word "a" to "an" when the next word in the sentence begins with a vowel.
+
+# Original: 27 November 2019
+# Edited: 29 November 2020
 
 text = []
 words = ""
@@ -13,12 +19,13 @@ def is_vowel(letter):
 fname = "inputfiles/madlibs.txt"
 with open(fname, "r") as f:
     text = [line for line in f]
+f.close()
 
 # split and get user inputs on words to fill in, rejoin to a single string
 text = text[0].replace("[", "]").split("]")
 for i in range(len(text)):
     if i%2 != 0:
-        words = str(input("Give me a " + text[i] + ".\n"))
+        words = str(input("Give me: " + text[i] + "\n"))
         text[i] = words
 words = "".join(text)
 

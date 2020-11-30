@@ -1,5 +1,10 @@
-# Wikipedia Articles
-# 7 December 2019
+# Problem 27: Random Wikipedia Article
+ # Create a program that pulls titles from the official Wikipedia API and then asks the user one by one if he or she would like to read about that article.
+ # Do something about the possibility of unicode appearing in the title.
+ # Allow the user to simply press ENTER to be asked about a new article.
+
+# Original: 7 December 2019
+# Edited: 29 November 2020
 
 import urllib.request
 import json
@@ -27,9 +32,9 @@ while True:
     
     # for each title in the list, ask the user if they'd like to read
     for x in range(len(title)):
-        yes_no = input("Would you like to read about " + title[x] + "?\n")
-        if yes_no.lower() == "yes":
+        if input("Enter 'y' if you would like to read about " + title[x] + ".\nEnter any other key to skip to next.\n").lower() == "y":
             webbrowser.open("https://en.wikipedia.org/wiki?curid=" + num[x])
-    cont = input("10 more random articles? Enter \"yes\" to continue.")
-    if cont.lower() != "yes":
+
+    # continue or exit
+    if input("10 more random articles? Enter 'y' to continue.\n").lower() != "y":
         break
