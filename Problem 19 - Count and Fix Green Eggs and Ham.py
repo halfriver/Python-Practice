@@ -1,12 +1,18 @@
-# Green Eggs and Ham Text Corrector
-# 4 Nov 2019
+# Problem 19: Count and Fix Green Eggs and Ham
+ # Copy the story into a regular text file.
+ # Create a program that reads through the story and makes the letter i uppercase any time it should be. (Make sure to change it when it's used in sam-I-am's name too.)
+ # Have your program make a new file, and have it write out the story correctly.
+ # Print out how many errors were corrected.
+
+# Original: 4 Nov 2019
+# Edited: 29 November 2020
 
 mistakes = 0
 text = []
 text_corrected = []
 
 # open text file of the story to read
-f = open("GreenEggsandHam.txt", "r")
+f = open("inputfiles/GreenEggsandHam.txt", "r")
 
 # copy text to list to work with and close original file
 for line in f:
@@ -29,7 +35,7 @@ for line in text:
     text_corrected.append(line)
 
 # create new file if it doesn't already exist and write corrected text to it
-new = open("GreenEggsandHam_corrected.txt","w")
+new = open("outputfiles/GreenEggsandHam_corrected.txt","w")
 for line in text_corrected:
     new.write(str(line))
 new.close()
