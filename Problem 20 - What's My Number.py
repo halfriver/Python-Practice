@@ -1,9 +1,19 @@
-# Find My Number
-# 03 Nov 2019
+# Problem What's My Number?
+ # Between 1 and 1000, there is only 1 number that meets the following criteria:
+  # The number has two or more digits.
+  # The number is prime.
+  # The number does NOT contain a 1 or 7 in it.
+  # The sum of all of the digits is less than or equal to 10.
+  # The first two digits add up to be odd.
+  # The second to last digit is even and greater than 1.
+  # The last digit is equal to how many digits are in the number.
+
+# Original: 03 Nov 2019
+# Edited: 29 November 2020
 
 from math import sqrt, ceil
 
-def prime(x):
+def isprime(x):
     for i in range(2,ceil(sqrt(x))):
         if x % i == 0:
             return True
@@ -37,7 +47,7 @@ def find():
             remove.append(num)
             
         # the number is prime
-        elif prime(int(num)):
+        elif isprime(int(num)):
             remove.append(num)
         
     for num in remove:
@@ -46,11 +56,3 @@ def find():
     print(num_master)
 
 
-'''
-/ The number is prime.
-/ The number does NOT contain a 1 or 7 in it.
-/ The sum of all of the digits is less than or equal to 10.
-/ The first two digits add up to be odd.
-/ The second to last digit is even.
-/ The last digit is equal to how many digits are in the number.
-'''
