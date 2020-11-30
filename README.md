@@ -4,6 +4,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 
 ## Project List
 *Projects are somewhat ordered by increasing difficulty.*
+|No.|Project|Status|
 |:---|:---:|:---:|
 |1|[99 Bottles](#99-bottles)|:heavy_check_mark:|
 |2|[Armstrong Number](#Armstrong-Number)|:heavy_check_mark:|
@@ -11,7 +12,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |4|[Pythagorean Triples Checker](#pythagorean-triples-checker)|:heavy_check_mark:|
 |5|[Rock Paper Scissors Game](#rock-paper-scissors-game)|:heavy_check_mark:|
 |6|[Coin Estimator By Weight](#coin-estimator-by-weight)|:heavy_check_mark:|
-|7|[Mad Libs Story Maker](#mad-libs-story-maker)|:construction:|
+|7|[Mad Libs Story Maker](#mad-libs-story-maker)|:heavy_check_mark:|
 |8|[Change Calculator](#change-calculator)|:heavy_check_mark:|
 |9|[Mean, Median, and Mode](#mean-median-and-mode)|:heavy_check_mark:|
 |10|[Higher Lower Guessing Game](#higher-lower-guessing-game)|:heavy_check_mark:|
@@ -31,7 +32,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |24|[A Variation of 21](#a-variation-of-21)|:construction:|
 |25|[Compare Recent reddit Karma](#compare-recent-reddit-karma)||
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)||
-|27|[Random Wikipedia Article](#random-wikipedia-article)|:construction:|
+|27|[Random Wikipedia Article](#random-wikipedia-article)|:heavy_check_mark:|
 |28|[What's the Weather?](#whats-the-weather)|:construction:|
 |29|[Sierpinski Triangle](#sierpinski-triangle)||
 |30|[Two Numbers](#two-numbers)||
@@ -45,9 +46,11 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |38|[Movie of the day](#movie-of-the-day)||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|:construction:|
 |40|[Palindrome](#palindrome)|:heavy_check_mark:|
-|41|[N Queens Validator]*|:construction:|
-|42|[Image Converter]*|:construction:|
+|41|N Queens Validator*|:construction:|
+|42|Image Converter*|:construction:|
+
 \**Additional Projects (not included in original list)*
+
 |Not Yet Started|Work in Progress|Completed|
 |:---:|:---:|:---:|
 ||:construction:|:heavy_check_mark:|
