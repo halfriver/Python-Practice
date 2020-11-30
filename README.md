@@ -4,6 +4,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 
 ## Project List
 *Projects are somewhat ordered by increasing difficulty.*
+|No.|Project|Status|
 |:---|:---:|:---:|
 |1|[99 Bottles](#99-bottles)|:heavy_check_mark:|
 |2|[Armstrong Number](#Armstrong-Number)|:heavy_check_mark:|
