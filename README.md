@@ -45,8 +45,8 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |38|[Movie of the day](#movie-of-the-day)||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|:construction:|
 |40|[Palindrome](#palindrome)|:heavy_check_mark:|
-|41|[N Queens Validator]*|:construction:|
-|42|[Image Converter]*|:construction:|
+|41|N Queens Validator*|:construction:|
+|42|Image Converter*|:construction:|
 \**Additional Projects (not included in original list)*
 |Not Yet Started|Work in Progress|Completed|
 |:---:|:---:|:---:|
