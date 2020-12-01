@@ -25,6 +25,9 @@ def factorial(num):
 while True:
     try:
         n = int(input("Give a number and we'll find that nth term in the Fibonacci sequence.\n").replace(" ", ""))
+        if n < 1:
+            print("Please give a positive number.")
+            continue
         break
     except:
         print("This is not a valid number, please try again.")
