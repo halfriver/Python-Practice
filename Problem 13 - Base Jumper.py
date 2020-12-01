@@ -49,9 +49,7 @@ q = ["What base is your number currently in?\n",
      "What base would you like to convert this number to?\n"]
 inputs = [0, "", 0]
 
-####### get rid of this continue boolean >:0000
-cont = True
-
+# input handling
 for i in range(len(q)):
     while True:
         try:
@@ -70,15 +68,14 @@ for i in range(len(q)):
             elif i == 1:
                 inputs[1] = input(q[1]).replace(" ", "")
                 for digit in digits[inputs[0]:]:
-                    if digit.lower() not in inputs[1].lower():
-                        cont = True
-                        continue
-                    else:
+                    # if the digit is in "unallowed" portion of list of digits, try again
+                    if digit.lower() in inputs[1].lower():
                         print("This value does not exist in the base you specified. Try again.\n")
-                        cont = False
                         break
-                if cont == False:
-                    continue
+                # if valid
+                else:
+                    break
+                continue
             break
         except ValueError: 
             print("That's not a valid number. Try again.\n")
