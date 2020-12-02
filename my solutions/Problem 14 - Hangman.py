@@ -9,7 +9,7 @@
 from random import choice 
 
 # dictionary of words
-f = open("inputfiles/dictionary.txt", "r")
+f = open("inputfiles/P14-dictionary.txt", "r")
 choices = f.read().split()
 f.close()
 

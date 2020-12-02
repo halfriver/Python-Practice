@@ -12,7 +12,7 @@ text = []
 text_corrected = []
 
 # open text file of the story to read
-f = open("inputfiles/GreenEggsandHam.txt", "r")
+f = open("inputfiles/P19-GreenEggsandHam.txt", "r")
 
 # copy text to list to work with and close original file
 for line in f:
@@ -35,7 +35,7 @@ for line in text:
     text_corrected.append(line)
 
 # create new file if it doesn't already exist and write corrected text to it
-new = open("outputfiles/GreenEggsandHam_corrected.txt","w")
+new = open("outputfiles/P19-GreenEggsandHam_corrected.txt","w")
 for line in text_corrected:
     new.write(str(line))
 new.close()
