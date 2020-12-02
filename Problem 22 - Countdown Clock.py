@@ -9,32 +9,51 @@
 import datetime
 import time
 
-now = datetime.datetime.now()
-
-date_input = []
 qs = ["What year?\n",
      "What month?\n",
      "What day?\n",
      "What hour (24 hr clock)?\n",
      "What minute?\n",
      "What second?\n"]
+mnth = {1:["1", "Jan", "January"],
+        2:["2", "Feb", "February"],
+        3:["3", "Mar", "March"],
+        4:["4", "Apr", "April"],
+        5:["5", "May"],
+        6:["6", "Jun", "June"],
+        7:["7", "Jul", "July"],
+        8:["8", "Aug", "August"],
+        9:["9", "Sept", "September"],
+        10:["10", "Oct", "October"],
+        11:["11", "Nov", "November"],
+        12:["12", "Dec", "December"]}
+
+#### additional input handling:
+# month may be expressed as a number or as the name/abbreviation of the month
+# make sure that inputs are within a valid range
+
 
 # input handling
-for q in range(len(qs)):
-    while True:
-        # must be ints
-        try:
-            # month may be expressed as a number or as the name/abbreviation of the month
-            if q == 1:
-                print("placeholder")
-            date_input.append(int(input(qs[q]).replace(" ","")))
-            break
-        except ValueError:
-            print("This is not a valid value. Try again.")
-        # cannot have already passed
-        
-target = datetime.datetime(int(date_input[0]), int(date_input[1]), int(date_input[2]), int(date_input[3]), int(date_input[4]), int(date_input[5]))
-
+while True:
+    date_input = []
+    for q in range(len(qs)):
+        while True:
+            # must be ints
+            try:
+                date_input.append(int(input(qs[q]).replace(" ","")))
+                break
+            except ValueError:
+                if q == 1:
+                    print("placeholder")
+                print("This is not a valid value. Try again.")
+    # cannot have already passed
+    target = datetime.datetime(date_input[0], date_input[1], date_input[2], date_input[3], date_input[4], date_input[5])
+    now = datetime.datetime.now()
+    if target > now:
+        break
+    else:
+        print("This time has already passed. Please input a future date and time.\n")
+    
 # print the countdown
 while target > now:
     now = datetime.datetime.now()
