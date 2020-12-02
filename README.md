@@ -6,33 +6,33 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 *Projects are somewhat ordered by increasing difficulty.*
 |No.|Project|Status|
 |:---|:---:|:---:|
-|1|[99 Bottles](#99-bottles)|:heavy_check_mark:|
-|2|[Armstrong Number](#Armstrong-Number)|:heavy_check_mark:|
-|3|[Magic 8 Ball](#magic-8-ball)|:heavy_check_mark:|
-|4|[Pythagorean Triples Checker](#pythagorean-triples-checker)|:heavy_check_mark:|
-|5|[Rock Paper Scissors Game](#rock-paper-scissors-game)|:heavy_check_mark:|
-|6|[Coin Estimator By Weight](#coin-estimator-by-weight)|:heavy_check_mark:|
-|7|[Mad Libs Story Maker](#mad-libs-story-maker)|:heavy_check_mark:|
-|8|[Change Calculator](#change-calculator)|:heavy_check_mark:|
-|9|[Mean, Median, and Mode](#mean-median-and-mode)|:heavy_check_mark:|
-|10|[Higher Lower Guessing Game](#higher-lower-guessing-game)|:heavy_check_mark:|
-|11|[Multiplication Table](#multiplication-table)|:heavy_check_mark:|
-|12|[Fibonacci Sequence](#fibonacci-sequence)|:heavy_check_mark:|
-|13|[Base Jumper](#base-jumper)|:heavy_check_mark:|
-|14|[Hangman Game](#hangman-game)|:heavy_check_mark:|
+|1|[99 Bottles](#99-bottles)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2001%20-%2099%20Bottles.py)|
+|2|[Armstrong Number](#Armstrong-Number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2002%20-%20Armstrong%20Number.py)|
+|3|[Magic 8 Ball](#magic-8-ball)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2003%20-%20Magic%208%20Ball.py)|
+|4|[Pythagorean Triples Checker](#pythagorean-triples-checker)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2004%20-%20Pythagorean%20Triples.py)|
+|5|[Rock Paper Scissors Game](#rock-paper-scissors-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2005%20-%20Rock%20Paper%20Scissors.py)|
+|6|[Coin Estimator By Weight](#coin-estimator-by-weight)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2006%20-%20Coin%20Estimator%20by%20Weight.py)|
+|7|[Mad Libs Story Maker](#mad-libs-story-maker)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2007%20-%20MadLibs.py)|
+|8|[Change Calculator](#change-calculator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2008%20-%20Change%20Calculator.py)|
+|9|[Mean, Median, and Mode](#mean-median-and-mode)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2009%20-%20Mean%20Median%20Mode.py)|
+|10|[Higher Lower Guessing Game](#higher-lower-guessing-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2010%20-%20Higher%20Lower.py)|
+|11|[Multiplication Table](#multiplication-table)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2011%20-%20Multiplication%20Table.py)|
+|12|[Fibonacci Sequence](#fibonacci-sequence)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2012%20-%20Fibonacci%20Sequence.py)|
+|13|[Base Jumper](#base-jumper)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2013%20-%20Base%20Jumper.py)|
+|14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|
 |15|[War Card Game](#war-card-game)||
 |16|[Menu Calculator](#menu-calculator)|:construction:|
 |17|[Seat Reservation](#seat-reservation)||
 |18|[Dice Rolling Simulator](#dice-rolling-simulator)|:construction:|
-|19|[Count and Fix Green Eggs and Ham](#count-and-fix-green-eggs-and-ham)|:heavy_check_mark:|
-|20|[What's My Number?](#whats-my-number)|:heavy_check_mark:|
-|21|[Factors of a Number](#factors-of-a-number)|:heavy_check_mark:|
+|19|[Count and Fix Green Eggs and Ham](#count-and-fix-green-eggs-and-ham)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2019%20-%20Count%20and%20Fix%20Green%20Eggs%20and%20Ham.py)|
+|20|[What's My Number?](#whats-my-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2020%20-%20What's%20My%20Number.py)|
+|21|[Factors of a Number](#factors-of-a-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2021%20-%20Factors%20of%20a%20Number.py)|
 |22|[Countdown Clock](#countdown-clock)|:construction:|
 |23|[Turn Based Pokemon Style Game](#turn-based-pokemon-style-game)||
 |24|[A Variation of 21](#a-variation-of-21)|:construction:|
 |25|[Compare Recent reddit Karma](#compare-recent-reddit-karma)||
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)||
-|27|[Random Wikipedia Article](#random-wikipedia-article)|:heavy_check_mark:|
+|27|[Random Wikipedia Article](#random-wikipedia-article)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2027%20-%20Random%20Wikipedia%20Article.py)|
 |28|[What's the Weather?](#whats-the-weather)|:construction:|
 |29|[Sierpinski Triangle](#sierpinski-triangle)||
 |30|[Two Numbers](#two-numbers)||
@@ -45,9 +45,9 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |37|[Chess](#ChessGame)||
 |38|[Movie of the day](#movie-of-the-day)||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|:construction:|
-|40|[Palindrome](#palindrome)|:heavy_check_mark:|
+|40|[Palindrome](#palindrome)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2040%20-%20Palindrome.py)|
 |41|N Queens Validator*|:construction:|
-|42|Image Converter*|:heavy_check_mark:|
+|42|Image Converter*|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2042%20-%20Image%20Converter.py)|
 
 \**Additional Projects (not included in original list)*
 
