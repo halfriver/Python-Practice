@@ -17,8 +17,8 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |9|[Mean, Median, and Mode](#mean-median-and-mode)|:heavy_check_mark:|
 |10|[Higher Lower Guessing Game](#higher-lower-guessing-game)|:heavy_check_mark:|
 |11|[Multiplication Table](#multiplication-table)|:heavy_check_mark:|
-|12|[Fibonacci Sequence](#fibonacci-sequence)|:construction:|
-|13|[Base Jumper](#base-jumper)|:construction:|
+|12|[Fibonacci Sequence](#fibonacci-sequence)|:heavy_check_mark:|
+|13|[Base Jumper](#base-jumper)|:heavy_check_mark:|
 |14|[Hangman Game](#hangman-game)|:heavy_check_mark:|
 |15|[War Card Game](#war-card-game)||
 |16|[Menu Calculator](#menu-calculator)|:construction:|

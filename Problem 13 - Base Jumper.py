@@ -4,7 +4,7 @@
  # The program should accept a base that is in the range of 2 to 16 inclusive.
  # Display the result to the user and ask if they want to exit or convert another number.
 
-# Original: 26 November 2020
+# Original: 01 December 2020
 
 from math import log
 
@@ -17,41 +17,28 @@ def base_norm(num, base_i):
         temp[i] *= (base_i**i)
     return sum(temp)
 
+# convert from base 10 to new base
 def base_jump(num, base_f):
     if base_f == 10:
         return num
-    conversion = [0]
-    while num/base_f > base_f:
-        conversion.append(num % base_f)
-        num /= base_f
-        print(conversion)
-        print(num)
-    print(conversion)
+    else:
+        conversion = []
+        convert = ""
+        while num > base_f:
+            conversion.append(num % base_f)
+            num //= base_f
+        conversion.append(num)
+        for i in reversed(conversion):
+            convert += digits[i]
+        return(convert)
         
-
-##def base_jump(num, base_f):
-##    if base_f == 10:
-##        return num
-##    # assumes base 10, based off of previous function
-##    conversion = [0]
-##    while num/base_f**(len(conversion)-1) > base_f:
-##        conversion.append(0)
-##    for i in range(len(conversion)):
-##        conversion[i] = num//base_f**(len(conversion)-1-i)
-##        num -= base_f**(len(conversion)-1-i)
-##        print(num)
-##    print(conversion)
-
-    
-digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "G", "F"]
+digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
 q = ["What base is your number currently in?\n",
      "What number would you like to convert?\n",
      "What base would you like to convert this number to?\n"]
 inputs = [0, "", 0]
 
-####### get rid of this continue boolean >:0000
-cont = True
-
+# input handling
 for i in range(len(q)):
     while True:
         try:
@@ -70,18 +57,18 @@ for i in range(len(q)):
             elif i == 1:
                 inputs[1] = input(q[1]).replace(" ", "")
                 for digit in digits[inputs[0]:]:
-                    if digit.lower() not in inputs[1].lower():
-                        cont = True
-                        continue
-                    else:
+                    # if the digit is in "unallowed" portion of list of digits, try again
+                    if digit.lower() in inputs[1].lower():
                         print("This value does not exist in the base you specified. Try again.\n")
-                        cont = False
                         break
-                if cont == False:
-                    continue
+                # if valid
+                else:
+                    break
+                continue
             break
         except ValueError: 
             print("That's not a valid number. Try again.\n")
         
-base_jump(base_norm(inputs[1], inputs[0]), inputs[2])
+new = base_jump(base_norm(inputs[1], inputs[0]), inputs[2])
 
+print("Your new number is: " + new)
