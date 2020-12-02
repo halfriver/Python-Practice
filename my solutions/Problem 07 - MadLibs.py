@@ -16,7 +16,7 @@ def is_vowel(letter):
         return True
 
 # get file input and write it to a list
-fname = "inputfiles/madlibs.txt"
+fname = "inputfiles/P07-madlibs.txt"
 with open(fname, "r") as f:
     text = [line for line in f]
 f.close()

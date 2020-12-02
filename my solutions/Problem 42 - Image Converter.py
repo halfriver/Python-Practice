@@ -1,5 +1,9 @@
-# Image Converter
-# 8 December 2019
+# Problem 42: Image Converter
+ # take an image and split it into its RBG components
+ # make the image greyscale and invert its colors as well
+
+# Original: 8 December 2019
+# Edited: 1 December 2020
 
 from PIL import Image
 
@@ -18,17 +22,21 @@ def invert(color_tuple):
 
 convert = ["red", "green", "blue", "grey", "inv"]
 for process in range(len(convert)):
-    image = Image.open("kingfishers.jpg")
+    image = Image.open("inputfiles/P42-kingfishers.jpg")
     pixels = image.load()
     for i in range(image.size[0]):
         for j in range(image.size[1]):
+            # split into RGB
             if process <= 2:
                 color = [0, 0, 0]
                 color[process] = pixels[i,j][process]
                 image.putpixel((i, j), tuple(color))
+            # greyscale
             elif process == 3:
                 image.putpixel((i, j), greyscale(pixels[i,j]))
+            # invert colors
             elif process == 4:
                 image.putpixel((i, j), invert(pixels[i,j]))
-    image.save("kingfishers_" + convert[process] + ".jpg")
+    image.save("outputfiles/P42-kingfishers_" + convert[process] + ".jpg")
         
+print("Process completed! Go check out the end results in the outputfiles folder.")
