@@ -29,7 +29,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |21|[Factors of a Number](#factors-of-a-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2021%20-%20Factors%20of%20a%20Number.py)|
 |22|[Countdown Clock](#countdown-clock)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2022%20-%20Countdown%20Clock.py)|
 |23|[Turn Based Pokemon Style Game](#turn-based-pokemon-style-game)||
-|24|[A Variation of 21/Blackjack](#a-variation-of-21)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2024a%20-%20Variation%20of%2021.py) [:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2024b%20-%20Blackjack.py|
+|24|[A Variation of 21/Blackjack](#a-variation-of-21)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2024a%20-%20Variation%20of%2021.py)|
 |25|[Compare Recent reddit Karma](#compare-recent-reddit-karma)||
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)||
 |27|[Random Wikipedia Article](#random-wikipedia-article)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2027%20-%20Random%20Wikipedia%20Article.py)|
