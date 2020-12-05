@@ -8,6 +8,7 @@
 
 import datetime
 import time
+import winsound
 
 qs = ["What year?\n",
      "What month?\n",
@@ -120,15 +121,20 @@ while True:
     
 # print the countdown
 while target > now:
-    time.sleep(0.99)
+    time.sleep(1)
     now = datetime.datetime.now()
     diff = target - now
     days = diff.days
     hours = diff.seconds // 3600
     minutes = (diff.seconds - (hours * 3600)) // 60
     seconds = (diff.seconds - (hours * 3600) - (minutes * 60))
+    if diff.days < 0:
+        break
     print("Time remaining: " + str(days) + " days, " + str(hours) + " hours, " + str(minutes) + " minutes, " + str(seconds) + " seconds.")
 
-
+# done, plays a beep
 print("Timer done! You've reached your specified date/time!")
+for i in range(3):
+    winsound.Beep(2500, 1000)
+
 
