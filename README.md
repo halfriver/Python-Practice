@@ -20,7 +20,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |12|[Fibonacci Sequence](#fibonacci-sequence)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2012%20-%20Fibonacci%20Sequence.py)|
 |13|[Base Jumper](#base-jumper)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2013%20-%20Base%20Jumper.py)|
 |14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|
-|15|[War Card Game](#war-card-game)||
+|15|[War Card Game](#war-card-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2015%20-%20War%20Card%20Game.py)|
 |16|[Menu Calculator](#menu-calculator)|:construction:|
 |17|[Seat Reservation](#seat-reservation)||
 |18|[Dice Rolling Simulator](#dice-rolling-simulator)|:construction:|
