@@ -1,10 +1,17 @@
-# Blackjack
-# 4 Nov 2019
+# Problem 24b: Blackjack
+ # One player plays against a dealer.
+ # At the beginning of the round, the player is given two random cards from a deck and they will be added together to make the player's round score.
+ # From here, the player has two options - draw another card to try to get their round score closer to 21, or they can end the round.
+ # The player can draw as many cards as they want until they end the round or their round score exceeds 21.
+ # Aces are only worth 1. All face cards are worth 10.
+ # Make sure the deck has 4 of each type of card, and then remove cards as they are drawn. At the end of each round, make the deck have all of the cards again.
 
-from random import randint
-from Deck import Deck
+# Original: 4 Nov 2019
+# Edited: 4 December 2020
 
-print("Welcome to 21.")
+from inputfiles.Deck import Deck
+
+print("Welcome to 21. Each game has 5 rounds.")
 mydeck = Deck()
 
 # repeatable game
@@ -23,8 +30,8 @@ while True:
 
     # rinse and repeat until the player stops drawing cards
     while True:
-        cont = input("Stay or Hit?\n").lower()
-        if cont == "stay":
+        cont = input("Stand or Hit?\n").lower()
+        if cont == "stand":
             print("\nThe dealer flips the face-down card. It's a" + dealer[0][0] + " for a total of " + str(dealer_value) + " points.\n")
             break
         elif cont == "hit":
@@ -54,7 +61,7 @@ while True:
         elif dealer_value <= 21:
             print("The dealer got a total score of " + str(dealer_value) + " and you got a total score of " + str(player_value) + ". You lost!\n")
 
-    # play again?
+    # end of game: play again?
     again = input("Would you like to play again? Yes or no?\n").lower()
     if again == "no":
         break
