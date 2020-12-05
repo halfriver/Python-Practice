@@ -27,9 +27,9 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |19|[Count and Fix Green Eggs and Ham](#count-and-fix-green-eggs-and-ham)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2019%20-%20Count%20and%20Fix%20Green%20Eggs%20and%20Ham.py)|
 |20|[What's My Number?](#whats-my-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2020%20-%20What's%20My%20Number.py)|
 |21|[Factors of a Number](#factors-of-a-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2021%20-%20Factors%20of%20a%20Number.py)|
-|22|[Countdown Clock](#countdown-clock)|:construction:|
+|22|[Countdown Clock](#countdown-clock)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2022%20-%20Countdown%20Clock.py)|
 |23|[Turn Based Pokemon Style Game](#turn-based-pokemon-style-game)||
-|24|[A Variation of 21](#a-variation-of-21)|:construction:|
+|24|[A Variation of 21/Blackjack](#a-variation-of-21)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2024a%20-%20Variation%20of%2021.py)[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2024b%20-%20Blackjack.py|
 |25|[Compare Recent reddit Karma](#compare-recent-reddit-karma)||
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)||
 |27|[Random Wikipedia Article](#random-wikipedia-article)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2027%20-%20Random%20Wikipedia%20Article.py)|
