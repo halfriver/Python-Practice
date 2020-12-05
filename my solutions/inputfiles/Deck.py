@@ -1,5 +1,7 @@
-from random import randint
+# Created: 11 November 2020
+# Edited: 04 December 2020
 
+from random import randint
 
 class Deck:
     
