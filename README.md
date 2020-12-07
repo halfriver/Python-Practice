@@ -21,9 +21,9 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |13|[Base Jumper](#base-jumper)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2013%20-%20Base%20Jumper.py)|
 |14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|
 |15|[War Card Game](#war-card-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2015%20-%20War%20Card%20Game.py)|
-|16|[Menu Calculator](#menu-calculator)|:construction:|
+|16|[Menu Calculator](#menu-calculator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2016%20-%20Menu%20Calculator.py)|
 |17|[Seat Reservation](#seat-reservation)||
-|18|[Dice Rolling Simulator](#dice-rolling-simulator)|:construction:|
+|18|[Dice Rolling Simulator](#dice-rolling-simulator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2018%20-%20Dice%20Rolling%20Simulator.py)|
 |19|[Count and Fix Green Eggs and Ham](#count-and-fix-green-eggs-and-ham)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2019%20-%20Count%20and%20Fix%20Green%20Eggs%20and%20Ham.py)|
 |20|[What's My Number?](#whats-my-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2020%20-%20What's%20My%20Number.py)|
 |21|[Factors of a Number](#factors-of-a-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2021%20-%20Factors%20of%20a%20Number.py)|
@@ -36,7 +36,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |28|[What's the Weather?](#whats-the-weather)|:construction:|
 |29|[Sierpinski Triangle](#sierpinski-triangle)||
 |30|[Two Numbers](#two-numbers)||
-|31|[Chickens and Rabbits](#chickens-and-rabbits)||
+|31|[Chickens and Rabbits](#chickens-and-rabbits)|:construction:|
 |32|[FLAMES Game](#FLAMES-Game)||
 |33|[Pomodoro Timer](#Pomodoro-Timer)||
 |34|[Scarne's Dice](#scarnes-dice)||
