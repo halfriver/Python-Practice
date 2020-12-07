@@ -1,5 +1,11 @@
-# Weather API
-# 28 November 2019
+# Problem 28: What's the Weather?
+ # Create a program that pulls data from OpenWeatherMap.org and prints out information about the current weather, such as the high, the low, and the amount of rain for wherever you live.
+ # Print out data for the next 5-7 days so you have a 5 day/week long forecast.
+ # Print the data to another file that you can open up and view at, instead of viewing the information in the command line.
+ # Write a file that you can print information to so that your project is more interesting.
+
+# Original: 28 November 2019
+# Edited: 10 December 2020
 
 import urllib.request
 import json
@@ -86,7 +92,7 @@ html_closing = """
 </html>
 """
 
-# fill in table by day, each day takes up a column
+# fill in table by day, each day takses up a column
 lotemp = "\n  <tr>"
 hitemp = "\n  <tr>"
 weather = "\n  <tr>"
@@ -102,17 +108,18 @@ for day in final:
             weather += ", "
     weather = weather + "</td>"
     count += 1
-    if count == 5:
+    if count == 6:
         html_body = html_body + "\n  </tr>"
         lotemp += "\n  </tr>"
         hitemp += "\n  </tr>"
         weather += "\n  </tr>"
 html_body = html_body + weather + lotemp + hitemp
 
-html_file = open("5DayWeather.html", "w")
+html_file = open("outputfiles/P28-5DayWeather.html", "w")
 html_file.write(html_opening + html_body + html_closing)
 html_file.close()
 
-webbrowser.open("5DayWeather.html")
+# for some reason, specifying outputfiles in the following function opens it using s
+webbrowser.open("P28-5DayWeather.html")
 
-print("The 5-day weather forecast for " + zipcode + " has been printed to 5DayWeather.html in this same directory. :)")
+print("The 5-day weather forecast for " + zipcode + " has been printed to P28-5DayWeather.html in this same directory. :)")
