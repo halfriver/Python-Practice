@@ -1,7 +1,8 @@
-# N Queens
-# 11 December 2019
-
-# given n, find all the possible positions of n queens positioned on an n by n board such that they do not impede each others' possible movements
+# Problem 41: N Queens
+ # given n, find all the possible positions of n queens positioned on an n by n board such that they do not impede each others' possible movements
+ 
+# Original: 11 December 2019
+# Edited: 08 December 2020
 
 solutions = []
 board_null = []
