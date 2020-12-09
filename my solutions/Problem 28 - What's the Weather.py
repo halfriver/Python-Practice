@@ -5,12 +5,13 @@
  # Write a file that you can print information to so that your project is more interesting.
 
 # Original: 28 November 2019
-# Edited: 10 December 2020
+# Edited: 09 December 2020
 
 import urllib.request
 import json
 import pprint
 import webbrowser
+import os
 
 def celsius(kelvin):
     return(round(kelvin - 273.15))
@@ -119,7 +120,7 @@ html_file = open("outputfiles/P28-5DayWeather.html", "w")
 html_file.write(html_opening + html_body + html_closing)
 html_file.close()
 
-# for some reason, specifying outputfiles in the following function opens it using s
-webbrowser.open("P28-5DayWeather.html")
+# open html displaying results in browser
+webbrowser.open("file://" + os.path.realpath("outputfiles/P28-5DayWeather.html"))
 
 print("The 5-day weather forecast for " + zipcode + " has been printed to P28-5DayWeather.html in this same directory. :)")
