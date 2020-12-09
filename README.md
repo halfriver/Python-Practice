@@ -33,10 +33,10 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |25|[Compare Recent reddit Karma](#compare-recent-reddit-karma)||
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)||
 |27|[Random Wikipedia Article](#random-wikipedia-article)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2027%20-%20Random%20Wikipedia%20Article.py)|
-|28|[What's the Weather?](#whats-the-weather)|:construction:|
+|28|[What's the Weather?](#whats-the-weather)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2028%20-%20What's%20the%20Weather.py)|
 |29|[Sierpinski Triangle](#sierpinski-triangle)||
 |30|[Two Numbers](#two-numbers)||
-|31|[Chickens and Rabbits](#chickens-and-rabbits)|:construction:|
+|31|[Chickens and Rabbits](#chickens-and-rabbits)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2031%20-%20Chickens%20and%20Rabbits.py)|
 |32|[FLAMES Game](#FLAMES-Game)||
 |33|[Pomodoro Timer](#Pomodoro-Timer)||
 |34|[Scarne's Dice](#scarnes-dice)||
