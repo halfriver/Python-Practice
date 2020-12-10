@@ -1,3 +1,4 @@
 # gitignore
 
 my\ solutions/inputfiles/__pycache__/
+wk/*
