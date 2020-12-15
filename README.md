@@ -12,7 +12,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |No.|Project|Python|JavaScript
 |:---|:---:|:---:|:---:|
 |1|[99 Bottles](#99-bottles)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2001%20-%2099%20Bottles.py)||
-|2|[Armstrong Number](#Armstrong-Number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2002%20-%20Armstrong%20Number.py)|:heavy_check_mark:|
+|2|[Armstrong Number](#Armstrong-Number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2002%20-%20Armstrong%20Number.py)|[:heavy_check_mark:](https://github.com/halfriver/Portfolio-Site/blob/master/programming/templates/armstrong.html)|
 |3|[Magic 8 Ball](#magic-8-ball)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2003%20-%20Magic%208%20Ball.py)||
 |4|[Pythagorean Triples Checker](#pythagorean-triples-checker)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2004%20-%20Pythagorean%20Triples.py)||
 |5|[Rock Paper Scissors Game](#rock-paper-scissors-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2005%20-%20Rock%20Paper%20Scissors.py)||
@@ -24,7 +24,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |11|[Multiplication Table](#multiplication-table)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2011%20-%20Multiplication%20Table.py)||
 |12|[Fibonacci Sequence](#fibonacci-sequence)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2012%20-%20Fibonacci%20Sequence.py)||
 |13|[Base Jumper](#base-jumper)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2013%20-%20Base%20Jumper.py)||
-|14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)||
+|14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|[:construction:](https://github.com/halfriver/Portfolio-Site/blob/master/programming/templates/hangman.html)|
 |15|[War Card Game](#war-card-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2015%20-%20War%20Card%20Game.py)||
 |16|[Menu Calculator](#menu-calculator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2016%20-%20Menu%20Calculator.py)||
 |17|[Seat Reservation](#seat-reservation)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2017%20-%20Seat%20Reservation.py)||
