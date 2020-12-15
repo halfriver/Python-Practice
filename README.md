@@ -27,7 +27,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|
 |15|[War Card Game](#war-card-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2015%20-%20War%20Card%20Game.py)|
 |16|[Menu Calculator](#menu-calculator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2016%20-%20Menu%20Calculator.py)|
-|17|[Seat Reservation](#seat-reservation)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2017%20-%20Seat%20Reservation.py)|
+|17|[Seat Reservation](#seat-reservation)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2017%20-%20Seat%20Reservation.py)|
 |18|[Dice Rolling Simulator](#dice-rolling-simulator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2018%20-%20Dice%20Rolling%20Simulator.py)|
 |19|[Count and Fix Green Eggs and Ham](#count-and-fix-green-eggs-and-ham)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2019%20-%20Count%20and%20Fix%20Green%20Eggs%20and%20Ham.py)|
 |20|[What's My Number?](#whats-my-number)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2020%20-%20What's%20My%20Number.py)|
