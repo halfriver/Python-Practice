@@ -51,10 +51,8 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |38|[Movie of the day](#movie-of-the-day)|||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2039%20-%20Web%20Scraper.py)||
 |40|[Palindrome](#palindrome)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2040%20-%20Palindrome.py)||
-|41|N Queens Validator*|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2041%20-%20N%20Queens%20Validator.py)||
-|42|Image Converter*|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2042%20-%20Image%20Converter.py)||
-
-\**Additional Projects (not included in original list)*
+|41|[N Queens Validator](#n-queens-validator)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2041%20-%20N%20Queens%20Validator.py)||
+|42|[Image Converter*](#image-converter)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2042%20-%20Image%20Converter.py)||
 
 ## Projects
 
@@ -269,17 +267,17 @@ In this project, you will make a game similar to [Blackjack](https://bicyclecard
 - At the end of the round, the difference between 21 and the round score is subtracted from the game score, and then the next round begins. 
 - After the five rounds, the player is given their total score and the game is over.
 - Since this is a text base game, tell the user what is happening. For example, tell him/her when he/she draws a card, the name of the card, when they bust, etc.
----Other Information About The Game---
-- Aces are only worth 1.
-- All face cards are worth 10.
-- If a player busts, 21 is subtracted from their total score.
+- Other Information About The Game
+  - Aces are only worth 1.
+  - All face cards are worth 10.
+  - If a player busts, 21 is subtracted from their total score.
 - Subgoals:
   - Create a ranking system at the end of the game and tell the user their rank. For example, if the player finishes with 50-59 points they get an F, 60-69 is a D, 70-79 is a C, 80-89 is a B, and 90-100 is an A.
   - At the end of each round, print out the user's total score.
   - This may be the hardest part of the project, depending on how you wrote it. Make sure the deck has 4 of each type of card, and then remove cards as they are drawn. At the end of each round, make the deck have all of the cards again.
 
 ### Compare Recent reddit Karma
-Since we're all redditors here, let's make something dealing with reddit. If you go to a user's profile and add .json to the end of it, you can get the all sorts of Json data about the user (think of Json as a giant dictionary of smaller dictionaries and lists). For example, if I go to my own profile and view it's Json data, it would look like this[1]. At first it might look intimidating, but if you break it down, you can see it's just one giant dictionary with all sorts of information about my latest posts.
+Since we're all redditors here, let's make something dealing with reddit. If you go to a user's profile and add .json to the end of it, you can get the all sorts of Json data about the user (think of Json as a giant dictionary of smaller dictionaries and lists). At first it might look intimidating, but if you break it down, you can see it's just one giant dictionary with all sorts of information about my latest posts.
 - Create a program that gets information about two different users, and then sees whose most recent post received the most karma.
 - The program should then print out which user received more karma, and what the difference was.
 - This is a pretty open project, so I encourage you to take it further by adding more features if you find it interesting.
@@ -292,8 +290,8 @@ Since we're all redditors here, let's make something dealing with reddit. If you
   - Not sure how to turn json data into usable python data? Check [this](http://www.pythonforbeginners.com/python-on-the-web/parse-json-objects-in-python/) out.
 
 ### Watch for new TIL facts
-If you finished the previous [project](https://github.com/alfredmuffin/Beginner-Projects#compare-recent-reddit-karma) which compared the karma of two new comments, hopefully you learned a thing or two about receiving data from Reddit's API. Now you're going to take this a step further, and even have the opportunity to make a basic twitter bot.
-- Create a program that receives data from the [/r/todayilearned](https://reddit.com/r/todayilearned) subreddit, and looks for new facts that have been posted.
+If you finished the previous [project](#compare-recent-reddit-karma) which compared the karma of two new comments, hopefully you learned a thing or two about receiving data from Reddit's API. Now you're going to take this a step further, and even have the opportunity to make a basic twitter bot.
+- Create a program that receives data from the [/r/todayilearned](https://reddit.com/r/todayilearned) subreddit and looks for new facts that have been posted.
 - Each time the program comes across a new fact, the fact should be printed into the command line. However, phrases like "TIL ", "TIL that", etc should be removed so the only thing that is printed is the fact.
 
 [New TIL API data here](https://www.reddit.com/r/todayilearned/new/.json)
@@ -309,8 +307,7 @@ There is actually a lot you can do once your program starts receiving facts. Ins
 - By now you should be pretty familiar with python, so if you get ideas for improving your program, go for it!
 
 ### Random Wikipedia Article
-If you've been to Wikipedia, you may have noticed that there is a link to a random article on the left side of the screen. While it can be fun to see what article you get taken to, sometimes it would be nice to see the name of the article so you can skip it if it sounds boring. Luckily, Wikipedia has an API that allows us to do so [Click here](https://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=10&format=json).
-However, there is a dilemma. Since Wikipedia has articles about topics from all over the world, some of them have special characters in the title. For example, the article about the spanish painter [Erasto Cortés Juárez](https://en.wikipedia.org/wiki/Erasto_Cort%C3%A9s_Ju%C3%A1rez) has é and á in it. If you look at this specific article's [API](https://en.wikipedia.org/w/api.php?action=query&prop=info&pageids=39608394&inprop=url&format=json), you will see that the title is "Erasto Cort\u00e9s Ju\u00e1rez" and that the \u00e9 and \u00e1 are replacing the two previously mentioned letters. (For information about what this is, start by checking out the first half of [this page](https://docs.python.org/2/howto/unicode.html) in the documentation). To make your program work, you're going to have to handle this problem somehow.
+If you've been to Wikipedia, you may have noticed that there is a link to a random article on the left side of the screen. While it can be fun to see what article you get taken to, sometimes it would be nice to see the name of the article so you can skip it if it sounds boring. Luckily, Wikipedia has an [API](https://en.wikipedia.org/w/api.php?action=query&list=random&rnnamespace=0&rnlimit=10&format=json) that allows us to do so.
 - Create a program that pulls titles from the official Wikipedia API and then asks the user one by one if he or she would like to read about that article.
 - Example:
   - If the first title is Reddit, then the program should ask something along the lines of "Would you like to read about Reddit?" If the user says yes, then the program should open up the article for the user to read.
@@ -328,41 +325,27 @@ If you would like to know the basics of what an API is, check out [this](http://
   - Print out data for the next 5-7 days so you have a 5 day/week long forecast.
   - Print the data to another file that you can open up and view at, instead of viewing the information in the command line.
   - If you know html, write a file that you can print information to so that your project is more interesting. Here is an example of the results from what I threw together.[3]
-- Tips:
+- Hints:
   - APIs that are in Json are essentially lists and dictionaries. Remember that to reference something in a list, you must refer to it by what number element it is in the list, and to reference a key in a dictionary, you must refer to it by it's name.
   - Don't like Celsius? Add &units=imperial to the end of the URL of the API to receive your data in Fahrenheit.
 
 ### Sierpinski Triangle
-
 The [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle) (also with the original orthography Sierpinski), also called the Sierpinski gasket or the Sierpinski Sieve, is a fractal and attractive fixed set with the overall shape of an equilateral triangle, subdivided recursively into smaller equilateral triangles. Originally constructed as a curve, this is one of the basic examples of self-similar sets, i.e., it is a mathematically generated pattern that can be reproducible at any magnification or reduction. It is named after the Polish mathematician _Waclaw Sierpinski_, but appeared as a decorative pattern many centuries prior to the work of Sierpinski.
-
-Task in hand :
-
-- create and visualize a fractal generator that forms a standard ***sierpinski triangle***.
-- perform this using recursive calls.
-
-- Subgoals :
-  - Also accept ***depth*** for which the fractal should be generated.
+- Create and visualize a fractal generator that forms a standard ***sierpinski triangle*** given a user-provided ***depth*** for which the fractal should be generated.
+- Hint: perform this using recursive calls.
 
 ### Two Numbers
 - Given an array of integers, return indices of the ***two numbers*** such that they add up to a specific target.
 - You may assume that each input would have exactly one solution, and you may not use the same element twice.
-Example:
-```
-Given nums = [2, 7, 11, 15], target = 9,
-Because nums[0] + nums[1] = 2 + 7 = 9,
-return [0, 1].
-```
+- For example: Given the numbers [2, 7, 11, 15] and a target of 9 --> nums[0] + nums[1] = 2 + 7 = 9 --> return [0, 1].
 
 ### Chickens and Rabbits
 - Write a program to solve a classic Chinese puzzle: We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
 - Hint: Use a for-loop to iterate through all possible solutions.
 
-### FLAMES Game
-
-Write a program which implements Flames.
-
-Flames is an interesting game that people play to learn about their relationships. Flames is named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies, and Siblings. It is a popular game among young people, especially those beginning to explore the world of crushes. Learn more about Flames [here](https://medium.com/@ritwika285/how-to-play-flames-game-890edc7bf3d) or [here](https://www.wikihow.com/Play-%22Flame%22)
+### FLAME Game
+- Write a program which implements [FLAME](https://www.wikihow.com/Play-%22Flame%22).
+- FLAME is an interesting game that people play to learn about their relationships. FLAME is named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies, and Siblings.
 
 ### Pomodoro Timer
 - Create a timer that follows the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
@@ -374,42 +357,24 @@ Flames is an interesting game that people play to learn about their relationship
 - Upon rolling a 2 to 6, the player can choose to either reroll or end their turn. Ending their turn adds the number they rolled to the number of points. A player can reroll as many times as they’d like on their turn. 
 
 ### GoogleCase
-
-- Its a game which allows you to play with english sentences.
-- User will enter a sentence in any format.(uppercase or lowercase or a mix of both)
-- Program must convert the given sentence in google case .What is a google case style of sentence?[know_about_it_here:]( It is a style of         writing where we replace all lower case letters into upper case letters leaving the initial of all the words).
-- Subgoals:
-    - Program must then convert the given sentence in camel case.To know more about camel case 
-    [click_here](https://en.wikipedia.org/wiki/Camel_case)
-    - Sentence can be entered with any number of spaces.
-
-Hint: If you are dealing with languages such as ***c*** then consider the sentences as the char array.
-
+TO BE REPLACED
 
 ### Connect4
-- [Connect4](https://www.mathsisfun.com/games/connect4.html) is an age old game in which the players choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. 
+- [Connect4](https://www.mathsisfun.com/games/connect4.html) is an age old game in which the players take turns dropping colored discs into a seven-column, six-row vertically suspended grid. 
 - The pieces fall straight down, occupying the lowest available space within the column. 
 - The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. 
-- Connect Four is a solved game. The first player can always win by playing the right moves.
-
 
 ### ChessGame
-
-- Chess is a game as old as time, and has always followed the same rules (deviations aside). The logic of chess, however, matches up very nicely with the same logic you would use to program a game. Additionally, Chess makes for a fantastic starter piecepun intendedtowards a programming career.
-- Youll start by mapping out both your board and your pieces. Then, youll go on to giving specific movements for your pieces. From brainstorm to final product, youll be forced to think of chess as less of a physical game and more of data-driven mental gymnastic! Click on the video above to begin learning how to maneuver your way through creating your very own chess program (and how to modify it to create your own version of chess).
-
+- Make the the game of chess.
+- You’ll start by mapping out both your board and your pieces. Then, you’ll go on to giving specific movements for your pieces. 
 
 ### Movie of the day
-
-- The app makes use of [OMDb REST API](https://www.omdbapi.com/) in order to fetch a random movie
-- Every time the user opens the app, the API gets queried in order to fetch the random movie
-- The app can also store (in the browser cache or the phone local storage) which movies have already been
-shown to the user so that it can exclude them from the recommendation sub-system.
-
+- The app makes use of [OMDb REST API](https://www.omdbapi.com/) in order to fetch a random movie upon a user’s request. 
+- Every time the user opens the app, the API gets queried in order to fetch the random movie.
+- The app can also store (in the browser cache or the phone local storage) which movies have already been shown to the user so that it can exclude them from the recommendation sub-system.
 
 ### Website Scraper / Analyzer 
-
-- Make an app that scrapes the content of a website (it's produced HTML code)
+- Make an app that scrapes the content of a website (its produced HTML code)
 - The app can then check for the absence of important HTML tags for SEO,
 missing alt tags on images, and whether the page has SEO meta tags
 - The app can be made in various languages that support web scraping (or have a library to
@@ -419,7 +384,6 @@ do so), like Python and Java.
     - How a web scraper works
     - How to traverse the HTML DOM and select elements
     - What are the important SEO tags and techniques in a web page
-
 
 ### Palindrome
 - Palindrome means anything that reads the same backwards as forwards.
