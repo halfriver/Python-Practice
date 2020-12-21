@@ -59,60 +59,44 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 ## Projects
 
 ### 99 Bottles
-- Create a program that prints out every line to the song "99 Bottles of Beer on the Wall."
-- Do not use a list for all of the numbers, and do not manually type them all in. Use a built in function instead.
+- Create a program that prints out every line to the song [99 Bottles of Beer on the Wall](https://en.wikipedia.org/wiki/99_Bottles_of_Beer).
+- Do not use a list for all of the numbers, and do not manually type them all in. Use built-in functions and a loop instead.
 - Besides the phrase "take one down," you may not type in any numbers/names of numbers directly into your song lyrics.
-- Remember, when you reach 1 bottle left, the word "bottles" becomes singular.
+- Remember, when you reach 1 bottle left, the word "bottles" becomes singular. At 0 bottles, the “s” returns.
 
 ### Armstrong Number
-- Learn about armstrong numbers [here](https://en.wikipedia.org/wiki/Narcissistic_number).
-- Define a function that allows the user to check whether a given number is armstrong number or not.
-- Hint: To do this, first determine the number of digits of the given number. Call that n. Then take every digit in the number and raise it to the nth power. Add them, and if your answer is the original number then it is an Armstrong number.
-- Example: Take 1634. Four digits. So, 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup> = 1 + 1296 + 81 + 256 = 1634. So 1634 is an Armstrong number.
+- Define a function that allows the user to check whether a given number is an Armstrong Number (also known as a [Narcissistic Number](https://mathworld.wolfram.com/NarcissisticNumber.html)) or not.
+- Hint: To do this, first determine the number of digits of the given number. Call that n. Then take every digit in the number and raise it to the nth power. Sum them, and if your answer is equal to the original number then it is an Armstrong Number.
+- Example: Take 1634. Four digits. So, `1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup>` = `1 + 1296 + 81 + 256` = `1634` Therefore, 1634 is an Armstrong number.
 - Tip: All single digit numbers are Armstrong numbers.
 
-
 ### Magic 8 Ball
-- Simulate a magic 8-ball.
-- Allow the user to enter their question.
-- Display an in progress message(i.e. "thinking").
-- Create 20 responses, and show a random response.
+- Simulate a [Magic 8-Ball](https://en.wikipedia.org/wiki/Magic_8-Ball) that will answer a user’s questions.
+- Allow the user to input their question.
+- Display an in progress message (i.e. "Thinking...").
+- Create 20 responses, and show one at random.
 - Allow the user to ask another question or quit.
-- Bonus:
-  - Add a gui.
-  - It must have box for users to enter the question.
-  - It must have at least 4 buttons:
-    - ask
-    - clear (the text box)
-    - play again
-    - quit (this must close the window)
 
 ### Pythagorean Triples Checker
-- If you do not know how basic right triangles work, or what a Pythagorean Triple is read these articles on Wikipedia[¹](https://en.wikipedia.org/wiki/Right_triangle) [²](https://en.wikipedia.org/wiki/Pythagorean_triple).
-- Allows the user to input the sides of any triangle in any order.
+- A [Pythagorean Triple](https://en.wikipedia.org/wiki/Pythagorean_triple) satisfies the formula a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.
+- Allow the user to input the sides of any triangle in any order.
 - Return whether the triangle is a Pythagorean Triple or not.
 - Loop the program so the user can use it more than once without having to restart the program.
 
 ### Rock Paper Scissors Game
-- Create a rock-paper-scissors game.
-- Ask the player to pick rock, paper or scissors.
-- Have the computer chose its move.
+- Create a program that allows the user to play [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors) against the computer..
+- Ask the player to pick rock, paper, or scissors.
+- Have the computer choose its move at random.
 - Compare the choices and decide who wins.
-- Print the results.
-- Subgoals:
-  - Give the player the option to play again.
-  - Keep a record of the score (e.g. Player: 3 / Computer: 6).
+- Display a record of the score (e.g. Player: 3 / Computer: 6), and allow the player to play again.
 
 ### Coin Estimator By Weight
 When some people receive change after shopping, they put it into a container and let it add up over time. Once they fill up the container, they'll roll them up in [coin wrappers](https://en.wikipedia.org/wiki/Coin_wrapper) which can then be traded in at a bank for what they are worth. While most banks will give away coin wrappers for free, it's convenient to have an idea of how many you will need. Instead of counting how many coins you have, it's easier to separate all of your coins, weigh them, and then estimate how many of each type you have and then how many wrappers you'll need.
 For example, if you weigh all of your dimes and see that you have 1276.9g of them, you can estimate that you have about 563 dimes (since each one is 2.268g) and you would be able to fill 11 dime wrappers.
-
 Here is the [weight of each coin](https://en.wikipedia.org/wiki/Coins_of_the_United_States_dollar#Coins_in_circulation) and [how many fit inside each type of wrapper](https://en.wikipedia.org/wiki/Coin_wrapper#Amount_in_a_roll_in_the_United_States).
-- Allow the user to input the total weight of each type of coin they have (pennies, nickels, dimes, and quarters).
+- Allow the user to input the total weight of each type of coin they have (pennies, nickels, dimes, and quarters) in either grams or pounds.
 - Print out how many of each type of coin wrapper they would need, how many coins they have, and the estimated total value of all of their money.
-- Subgoals:
-  - Round all numbers printed out to the nearest whole number.
-  - Allow the user to select whether they want to submit the weight in either grams or pounds.
+- Round all numbers printed out to the nearest whole number.
 
 ### Mad Libs Story Maker
 Ever played [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)? If you haven't, here are the basics:
@@ -120,11 +104,11 @@ Ever played [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)? If you haven't, 
 "Mad Libs consist of a book that has a short story on each page with many key words replaced with blanks. Beneath each blank is specified a lexical or other category, such as "noun," "verb," "place," or "part of the body." One player asks the other players, in turn, to contribute some word for the specified type for each blank, but without revealing the context for that word. Finally, the completed story is read aloud. The result is usually comic, surreal and somewhat nonsensical."
 
 - Create a Mad Libs style game, where the program asks the user for certain types of words, and then prints out a story with the words that the user inputted.
+- If the user has to put in a name, change the first letter to a capital letter.
+- Change the word "a" to "an" when the next word in the sentence begins with a vowel.
 - The story doesn't have to be too long, but it should have some sort of story line.
-- Tip: it's easiest to write out a quick story on a piece of paper or a word document, and then go back through and see which words the user should be able to change.
-- Subgoals:
-  - If the user has to put in a name, change the first letter to a capital letter.
-  - Change the word "a" to "an" when the next word in the sentence begins with a vowel.
+- Tip: it's easiest to write out a quick story on a piece of paper or a text file, and then go back through and see which words the user should be able to change.
+
 
 ### Change Calculator
 - Imagine that your friend is a cashier, but has a hard time counting back change to customers.
@@ -193,32 +177,27 @@ If you do not know about the Fibonacci Sequence, read about it [here](https://en
 
 ### Menu Calculator
 Imagine you have started up a small restaurant and are trying to make it easier to take and calculate orders. Since your restaurant only sells 9 different items, you assign each one to a number, as shown below.
-- 1. Chicken Strips - $3.50
-- 2. French Fries - $2.50
-- 3. Hamburger - $4.00
-- 4. Hotdog - $3.50
-- 5. Large Drink - $1.75
-- 6. Medium Drink - $1.50
-- 7. Milk Shake - $2.25
-- 8. Salad - $3.75
-- 9. Small Drink - $1.25
-
-To quickly take orders, your program should allow the user to type in a string of numbers and then it should calculate the cost of the order. For example, if one large drink, two small drinks, two hamburgers, one hotdog, and a salad are ordered, the user should type in 5993348, and the program should say that it costs $19.50. Also, make sure that the program loops so the user can take multiple orders without having to restart the program each time.
-- Subgoals:
-  - If you decide to, print out the items and prices every time before the user types in an order.
-  - Once the user has entered an order, print out how many of each item have been ordered, as well as the total price.
-  - If an item was not ordered at all, then it should not show up.
+1. Chicken Strips - $3.50
+2. French Fries - $2.50
+3. Hamburger - $4.00
+4. Hotdog - $3.50
+5. Large Drink - $1.75
+6. Medium Drink - $1.50
+7. Milk Shake - $2.25
+8. Salad - $3.75
+9. Small Drink - $1.25
+To quickly take orders, your program should allow the user to type in a string of numbers and then it should calculate the cost of the order. 
+- For example, if one large drink, two small drinks, two hamburgers, one hotdog, and a salad are ordered, the user should type in 5993348, and the program should say that it costs $19.50. 
+- Once the user has entered an order, print out how many of each item have been ordered, as well as the total price. If an item was not ordered at all, then it should not show up.
+- Make sure that the program loops so the user can take multiple orders without having to restart the program each time.
+- Print out the items and prices at the start of every new order.
 
 ### Seat Reservation
 If you've ever been in a concert, you are aware that you buy tickets to be able to reserve a seat inside a stadium. The seat you will be on will have a specific number or code that would enable you to know exactly how far or how close you are to the stage. 
-
-Note: if you are kind of uncomfortable with lists, here's a [reference](https://www.w3schools.com/python/python_lists.asp) to get you started. 
-
-- Create a simple seat reservation program
+- Create a simple seat reservation program that prompts the user to enter 
 - Create a list that would store dashes '-' as a symbol that the seat is still available to take.
-- Define a function that would loop over the list and print out the seats horizontally or in a 3 x 3 position. Refer to [this](https://image.shutterstock.com/image-vector/stadium-chairs-vector-icon-arenabench-260nw-1056480272.jpg) image for reference.
-- Define a second function that would check if the seats are occupied. This should check if the list contains "X" in each element, which is the symbol that we will use if the seat is taken that you will store in a variable. If the variable is equal to 9 (the total number of seats), return True (and break from the loop), and False if not.
-- Create a loop that would have to (1) ask the user for the number of seat he would want to reserve, (2) print out the chairs, (3) check if all the seats are occupied and (4) ask the user now if he/she wants to reserve again.
+- Generate an array of seats in a 3 x 3 grid that stores a dash ‘-’ to mean that the seat is available and an “X” to mean that it is taken. 
+- Ask the user for the seat number he would want to reserve and reserve it if available. 
 
 ### Dice Rolling Simulator
 By using the random module, Python can do things like pseudo-random number generation.
@@ -236,10 +215,9 @@ By using the random module, Python can do things like pseudo-random number gener
   - Allow the user to select the number of dice to be drawn on screen(1-4) 2. Add up the total of the dice and display it
 
 ### Count and Fix Green Eggs and Ham
-Some of you may remember the Dr. Seuss story "Green Eggs and Ham". For those of you that don't remember it or have never heard of it, [here](http://pastebin.com/XMY48CnN) is the story. However, there is a problem with the story I gave you - every time the word I is used, it is lowercase.
-Because of this problem, your job is to do the following:
-- Copy the story I gave you into a regular text file.
-- Create a program that reads through the story and makes the letter i uppercase any time it should be. (Make sure to change it when it's used in sam-I-am's name too.)
+Some of you may remember the Dr. Seuss story "Green Eggs and Ham". For those of you that don't remember it or have never heard of it, [here](http://pastebin.com/XMY48CnN) is the story. However, there is a problem with the story: every time the word ‘I’ is used, it is lowercase.
+- Copy and save the story into a plain text file.
+- Create a program that reads through the story and makes the letter ‘i’ uppercase any time it should be. (Make sure to change it when it's used in Sam-I-am's name too.)
 - Have your program make a new file, and have it write out the story correctly.
 - Print out how many errors were corrected.
 - When you're finished, you should have corrected [this many](https://i.imgur.com/GRkj3yz.jpg) errors.
@@ -253,7 +231,6 @@ Between 1 and 1000, there is only 1 number that meets the following criteria:
 - The first two digits add up to be odd.
 - The second to last digit is even and greater than 1.
 - The last digit is equal to how many digits are in the number.
-
 To find out if you have the correct number, click [here](https://i.imgur.com/jbz4nJ4.jpg).
 
 ### Factors of a Number
@@ -267,42 +244,36 @@ To find out if you have the correct number, click [here](https://i.imgur.com/jbz
 
 ### Countdown Clock
 - Create a program that allows the user to choose a time and date, and then prints out a message at given intervals (such as every second) that tells the user how much longer there is until the selected time.
-- Subgoals:
-  - If the selected time has already passed, have the program tell the user to start over.
-  - If your program asks for the year, month, day, hour, etc. separately, allow the user to be able to type in either the month name or its number.
-  - TIP: Making use of built in modules such as time and datetime can change this project from a nightmare into a much simpler task.
+- If your program asks for the year, month, day, hour, etc. separately, allow the user to be able to type in either the month name or its number.
+- If the selected time has already passed, have the program tell the user to start over.
+- Hint: Making use of built in modules such as time and datetime can change this project from a nightmare into a much simpler task.
 
 ### Turn Based Pokemon Style Game
 - Write a simple game that allows the user and the computer to take turns selecting moves to use against each other.
-- Both the computer and the player should start out at the same amount of health (such as 100), and should be able to choose between the three moves:
-  - The first move should do moderate damage and has a small range (such as 18-25).
+- Both the computer and the player should start out at the same amount of health (such as 100), and should be able to choose between three moves (give them names):
+  - The first move should do a moderate amount of damage selected from a small range (such as 18-25).
   - The second move should have a large range of damage and can deal high or low damage (such as 10-35).
   - The third move should heal whoever casts it a moderate amount, similar to the first move.
-- After each move, a message should be printed out that tells the user what just happened, and how much health the user and computer have. Once the user or the computer's health reaches 0, the game should end.
-- Subgoals:
-  - When someone is defeated, make sure the game prints out that their health has reached 0, and not a negative number.
-  - When the computer's health reaches a set amount (such as 35%), increase it's chance to cast heal.
-  - Give each move a name.
+- After each move, a message should be printed out that tells the user what just happened, and how much health the user and computer have. 
+- When the computer's health reaches a certain amount (such as 35%), increase its chance to cast heal.
+- Once the user or the computer's health reaches 0 (make sure that it displays as 0 and not a negative number), the game should end.
 
 ### A Variation of 21
-If you do not know how 21 (AKA Blackjack) is played, reading the first couple of paragraphs of [this](https://en.wikipedia.org/wiki/Blackjack) wikipedia article may be beneficial.
-
-In this project, you will make a game similar to Blackjack. In this version:
+In this project, you will make a game similar to [Blackjack](https://bicyclecards.com/how-to-play/blackjack/). In this version:
 - There is only one player.
 - There are two types of scores: the game score and the round score.
 - The game score will begin at 100, and the game will last for five rounds.
-- At the beginning of the round, the player is given two random cards from a deck and they will be added together to make the player's round score.
+- At the beginning of the round, print the round number. The player is given two random cards from a deck and they will be added together to make the player's round score.
 - From here, the player has two options - draw another card to try to get their round score closer to 21, or they can end the round.
 - The player can draw as many cards as they want until they end the round or their round score exceeds 21.
-- At the end of the round, the difference between 21 and the round score is subtracted from the game score, and then the next round begins. After the five rounds, the player is given their total score and the game is over.
+- At the end of the round, the difference between 21 and the round score is subtracted from the game score, and then the next round begins. 
+- After the five rounds, the player is given their total score and the game is over.
+- Since this is a text base game, tell the user what is happening. For example, tell him/her when he/she draws a card, the name of the card, when they bust, etc.
 ---Other Information About The Game---
 - Aces are only worth 1.
-- If a player busts, 21 is subtracted from their total score.
 - All face cards are worth 10.
-- So the point of your program is to allow the user to play the game described above.
+- If a player busts, 21 is subtracted from their total score.
 - Subgoals:
-  - At the beginning of each round, print the round number (1 to 5).
-  - Since this is a text base game, tell the user what is happening. For example, tell him/her when he/she draws a card, the name of the card, when they bust, etc.
   - Create a ranking system at the end of the game and tell the user their rank. For example, if the player finishes with 50-59 points they get an F, 60-69 is a D, 70-79 is a C, 80-89 is a B, and 90-100 is an A.
   - At the end of each round, print out the user's total score.
   - This may be the hardest part of the project, depending on how you wrote it. Make sure the deck has 4 of each type of card, and then remove cards as they are drawn. At the end of each round, make the deck have all of the cards again.
@@ -374,24 +345,18 @@ Task in hand :
   - Also accept ***depth*** for which the fractal should be generated.
 
 ### Two Numbers
-
-Given an array of integers, return indices of the ***two numbers*** such that they add up to a specific target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
+- Given an array of integers, return indices of the ***two numbers*** such that they add up to a specific target.
+- You may assume that each input would have exactly one solution, and you may not use the same element twice.
 Example:
 ```
 Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
+
 ### Chickens and Rabbits
-
-Write a program to solve a classic ancient Chinese puzzle:
-We count 35 heads and 94 legs among the chickens and rabbits in a farm.
-How many rabbits and how many chickens do we have?
-
-Hint:
-Use for loop to iterate all possible solutions.
+- Write a program to solve a classic Chinese puzzle: We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
+- Hint: Use a for-loop to iterate through all possible solutions.
 
 ### FLAMES Game
 
@@ -400,23 +365,13 @@ Write a program which implements Flames.
 Flames is an interesting game that people play to learn about their relationships. Flames is named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies, and Siblings. It is a popular game among young people, especially those beginning to explore the world of crushes. Learn more about Flames [here](https://medium.com/@ritwika285/how-to-play-flames-game-890edc7bf3d) or [here](https://www.wikihow.com/Play-%22Flame%22)
 
 ### Pomodoro Timer
-Create a Pomodoro Timer.
-
-Pomodoro Timer is a time management method. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. These intervals are named pomodoros, the plural in English of the Italian word pomodoro (tomato), after the tomato-shaped kitchen timer that Cirillo used as a university student.
-There are six steps in the original technique:
-
-Decide on the task to be done.
-Set the pomodoro timer (traditionally to 25 minutes).
-Work on the task.
-End work when the timer rings and put a checkmark on a piece of paper.
-If you have fewer than four checkmarks, take a short break (35 minutes), then go to step 2.
-After four pomodoros, take a longer break (1530 minutes), reset your checkmark count to zero, then go to step 1.
-to know more about Pomodoro Timer [click here](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+- Create a timer that follows the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
+- The Pomodoro technique is a time management method used to break down work into 25-minute intervals separated by 5-minute breaks. After every 4 cycles of work, take a longer break of 15-30 minutes. 
 
 ### Scarne's Dice
-
-Turn-based dice game where players score points by rolling a die and then: if they roll a 1, score no points and lose their turn, if they roll a 2 to 6: add the rolled value to their points choose to either reroll or keep their score and end their turn. The winner is the first player that reaches (or exceeds) 100 points.
-
+- Make a turn-based dice game where players compete to reach (or exceed) 100 points by rolling a die. 
+- Rolling a 1 scores no points and the roller loses their turn. 
+- Upon rolling a 2 to 6, the player can choose to either reroll or end their turn. Ending their turn adds the number they rolled to the number of points. A player can reroll as many times as they’d like on their turn. 
 
 ### GoogleCase
 
@@ -432,12 +387,10 @@ Hint: If you are dealing with languages such as ***c*** then consider the senten
 
 
 ### Connect4
-
-- It is an age old game in which the players choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. 
+- [Connect4](https://www.mathsisfun.com/games/connect4.html) is an age old game in which the players choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. 
 - The pieces fall straight down, occupying the lowest available space within the column. 
 - The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. 
 - Connect Four is a solved game. The first player can always win by playing the right moves.
-- To read more: [Connect4](https://www.mathsisfun.com/games/connect4.html)
 
 
 ### ChessGame
@@ -469,11 +422,16 @@ do so), like Python and Java.
 
 
 ### Palindrome
-
-- Palindrome means anything(here numbers) that reads the same backwards as forwards.
+- Palindrome means anything that reads the same backwards as forwards.
 - Write a program to check if a number is a palindrome or not.
-- For example 12321 is a palindrome since it reads the same forward and backwards. 
+- Example: “12321” and “racecar” are palindromes since they read the same forward and backwards. 
 
+### N Queens Validator
+- Given n, find all the possible positions of n queens positioned on an n by n board such that they do not impede each others' possible movements.
+
+### Image Converter
+- Take an image and split it into its RBG components.
+- Make the image greyscale and invert its colors as well.
 
 ## Credits
 Most of these project ideas were originally created on [reddit](https://reddit.com/r/beginnerprojects) where the original links are officially maintained [here](https://docs.google.com/document/d/1TyqD2_oDtiQIh_Y55J5RfeA91JJECc97xYIKM112H9I/edit?usp=sharing). The projects in this repository that are not in that list have been added by this project's contributors.
