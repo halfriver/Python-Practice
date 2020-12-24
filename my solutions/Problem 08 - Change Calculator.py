@@ -1,7 +1,18 @@
-# Problem 8: Change Calculator
- # Imagine that your friend is a cashier, but has a hard time counting back change to customers.
- # Create a program that allows him to input a certain amount of change, and then print how how many quarters, dimes, nickels, and pennies are needed to make up the amount needed. 
- # Example: if he inputs 1.47, the program will say that he needs 5 quarters, 2 dimes, 0 nickels, and 2 pennies.
+'''
+Problem 8 - Change Calculator
+- Create a program that allows them to input a certain amount of change, and
+then print how many quarters, dimes, nickels, and pennies are needed to make up
+the amount needed.
+- Example: If they input “1.47”, the program will say that he needs 5
+quarters, 2 dimes, 0 nickels, and 2 pennies.
+- In addition, to save your friend from needing to calculate the change, allow
+them to enter the amount given to them and the purchase amount so that you can
+calculate the change yourself.
+- Make sure that you handle pluralization correctly.
+- Allow your friend to either enter another dollar amount or quit.
+- Strip out “$” characters and gracefully notify the user of any errors with
+their input (i.e. handle inputs like “$0.37”, “1>78”, or “fish”)
+'''
 
 # Original: 8 Sept 2019
 # Edited: 25 November 2020
@@ -14,7 +25,7 @@ while True:
         # make sure decimal converts correctly to cents
         if len(value) == 2:
             if value[1] < 10:
-                value[1] *= 10            
+                value[1] *= 10
         break
     except ValueError:
         value = input("Please input an integer.\n").replace(" ", "").replace("$", "")

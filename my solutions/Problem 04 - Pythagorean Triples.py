@@ -1,16 +1,22 @@
-# Problem 4: Pythagorean Triples Checker
- # Allows the user to input the sides of any triangle in any order.
- # Return whether the triangle is a Pythagorean Triple or not.
- # Loop the program so the user can use it more than once without having to restart the program.
+'''
+Problem 4 - Pythagorean Triples
+- A Pythagorean Triple satisfies the formula a-squared + b-squared = c-squared.
+- Allow the user to input the sides of any triangle in any order.
+- Return whether the triangle is a Pythagorean Triple or not.
+- Loop the program so the user can use it more than once without having to
+restart the program.
+'''
 
 # Original: 03 Sept 2019
 # Edited: 24 November 2020
+
 
 def triple(ab, c):
     if (ab[0]**2) + (ab[1]**2) == (c**2):
         print("The set is a Pythagorean Triple.")
     else:
         print("The set is not a Pythagorean Triple.")
+
 
 ''' ORIGINAL
 # set the three values to a, b, and c such that c equals the largest number
@@ -37,7 +43,7 @@ while True:
             break
         else:
             num = [x for x in input("There need to be three numbers. Please try again. \n").replace(" ", "").split(",")]
-        
+
     # c is the largest number, a and b are the remaining items in the list
     c = max(num)
     num.remove(c)
@@ -47,5 +53,3 @@ while True:
     num = input("If you would like to exit, please enter 'x'. Else, enter another set of numbers to check. \n")
     if num.lower() == "x":
         break
-
-
