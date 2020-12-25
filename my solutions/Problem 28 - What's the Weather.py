@@ -1,8 +1,14 @@
-# Problem 28: What's the Weather?
- # Create a program that pulls data from OpenWeatherMap.org and prints out information about the current weather, such as the high, the low, and the amount of rain for wherever you live.
- # Print out data for the next 5-7 days so you have a 5 day/week long forecast.
- # Print the data to another file that you can open up and view at, instead of viewing the information in the command line.
- # Write a file that you can print information to so that your project is more interesting.
+'''
+Problem 28 - What's the Weather?
+- Create a program that pulls data from OpenWeatherMap.org and prints out
+information about the current weather, such as the high, the low, and the
+amount of rain for wherever you live.
+- Print out data for the next 5-7 days so you have a 5 day/week long forecast.
+- Print the data to another file that you can open up and view at, instead of
+viewing the information in the command line.
+- If you know html, write a file that you can print information to so that your
+project is more interesting.
+'''
 
 # Original: 28 November 2019
 # Edited: 09 December 2020
@@ -13,11 +19,14 @@ import pprint
 import webbrowser
 import os
 
+
 def celsius(kelvin):
     return(round(kelvin - 273.15))
 
+
 def fahren(kelvin):
     return(round((celsius(kelvin)*(9/5)) + 32))
+
 
 APIkey = "8a0a2c2ff1a604ae8f89026e2091be16"
 zipcode = input("Enter your ZIP code (US).\n")
@@ -47,7 +56,7 @@ final = {}
 day_temp = []
 day_descript = []
 for dt in range(len(date)):
-    date[dt] = date[dt].split(" ")[0]   
+    date[dt] = date[dt].split(" ")[0]
     # if new day, create new dictionary in final for that day
     if date[dt] not in final:
         final[date[dt]] = {}

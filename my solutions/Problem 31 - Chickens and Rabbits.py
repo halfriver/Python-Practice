@@ -1,5 +1,10 @@
-# Problem 31: Chickens and Rabbits
- # We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
+'''
+Problem 31 - Chickens and Rabbits
+- Write a program to solve a classic Chinese puzzle: We count 35 heads and 94
+legs among the chickens and rabbits in a farm. How many rabbits and how many
+chickens do we have?
+- Hint: Use a for-loop to iterate through all possible solutions.
+'''
 
 # Original: 09 December 2020
 
@@ -14,6 +19,3 @@ for c in p_c:
     for r in p_r:
         if c+r == 94 and p_c.index(c)+p_r.index(r)+2 == 35:
             print("There are " + str(p_c.index(c)+1) + " chickens and " + str(p_r.index(r)+1) + " rabbits.")
-
-
-
