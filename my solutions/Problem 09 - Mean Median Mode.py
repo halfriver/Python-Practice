@@ -1,8 +1,14 @@
-# Problem 9: Mean, Median, Mode
- # Create three functions that allow the user to find the mean, median, and mode of a list of numbers.
- # In the mean function, give the user a way to select how many decimal places they want the answer to be rounded to.
- # If there is an even number of numbers in the list, return both numbers that could be considered the median.
- # If there are multiple modes, return all of them.
+'''
+Problem 9 - Mean Median Mode
+- Create three functions that allow the user to find the mean, median, and mode
+of a list of numbers. If you have access to or know of functions that already
+complete these tasks, do not use them - create them from scratch!
+- In the mean function, give the user a way to select how many decimal places
+they want the answer to be rounded to.
+- If there is an even number of numbers in the list, return both numbers that
+could be considered the median.
+- If there are multiple modes, return all of them. If there is not one, say so.
+'''
 
 # Original: 10 Sept 2019
 # Edited: 25 November 2020
@@ -10,9 +16,12 @@
 import math
 from collections import Counter
 
+
 def mean(numlist, decimals):
     # new function, return
     return round(sum(numlist)/len(numlist), decimals)
+
+
 ''' ORIGINAL
     mean = 0
     for x in range(0, len(num)):
@@ -20,6 +29,7 @@ def mean(numlist, decimals):
     mean /= len(num)
     return float(mean)
 '''
+
 
 def median(numlist):
     # new function, returns list of 1 or 2 integers
@@ -34,6 +44,8 @@ def median(numlist):
     # if number of list items is odd, return the one median
     else:
         return [numlist[(len(numlist)-1)//2]]
+
+
 ''' ORIGINAL
     median = 0
     if len(num) % 2 == 0:
@@ -46,6 +58,7 @@ def median(numlist):
         return median
 '''
 
+
 def mode(numlist):
     # new function, returns dictionary
     # keeps track of max frequency
@@ -55,7 +68,7 @@ def mode(numlist):
     # creates dictionary of items in numlist and the frequency of each
     counter = Counter(numlist)
     for x in counter:
-        # if item in list has frequency greater than max, set its occurrence to max and set
+        # if item in list has frequency greater than max, set it equal to max
         if counter[x] > mcount:
             mcount = counter[x]
             mdict = {mcount: [x]}
@@ -66,7 +79,8 @@ def mode(numlist):
         return ""
     else:
         return mdict
-      
+
+
 ''' ORIGINAL
     mode_count = 1
     mode = []
@@ -88,7 +102,7 @@ while True:
         try:
             num = [int(x) for x in num]
             break
-        except:
+        except ValueError:
             num = [x for x in input("Please make sure that you are entering integers.\n").replace(" ", "").split(",")]
 
 # ask how many decimal places the mean should have; make sure it's an int
@@ -97,7 +111,7 @@ while True:
     try:
         deci = int(deci)
         break
-    except:
+    except ValueError:
         deci = input("Please input a single integer.\n").replace(" ", "")
 
 # print mean
@@ -106,9 +120,9 @@ print("Mean: " + str(mean(num, deci)))
 # print median
 med = ""
 for x in median(num):
-      med += str(x)
-      if x != median(num)[len(median(num))-1]:
-          med += ", "
+    med += str(x)
+    if x != median(num)[len(median(num))-1]:
+        med += ", "
 print("Median(s): " + med)
 
 # print mode

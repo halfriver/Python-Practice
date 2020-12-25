@@ -1,9 +1,11 @@
-# Problem 40: Palindrome
- # Palindrome means anything (here numbers) that reads the same backwards as forwards.
- # Write a program to check if a number is a palindrome or not.
- # For example 12321 is a palindrome since it reads the same forward and backwards.
+'''
+Problem 40 - Palindrome
+- Palindrome means anything that reads the same backwards as forwards.
+- Write a program to check if a number is a palindrome or not.
+'''
 
 # Original: 24 November 2020
+
 
 def palindrome(num):
     num_inv = ""
@@ -13,6 +15,7 @@ def palindrome(num):
         print(num_inv + " is a palindrome of " + num_inv + ".\n")
     else:
         print(num_inv + " is not a palindrome of " + num_inv + ".\n")
+
 
 num = str(input("Input a number to see if it is a palindrome.\n").replace(" ", "")).lower()
 

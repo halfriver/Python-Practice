@@ -1,9 +1,20 @@
-# Problem 15: War Card Game
- # War (also known as Battle in the United Kingdom) is a card game typically played by two players using a standard playing card deck. The objective of the game is to win all of the cards.
- # The deck is divided evenly among the players, giving each a down stack. In unison, each player reveals the top card of their deck—this is a "battle"—and the player with the higher card takes both of the cards played and moves them to their stack. Aces are high, and suits are ignored.
- # If the two cards played are of equal value, then there is a "war". Both players place the next three cards of their pile face down and then another card face-up. The owner of the higher face-up card wins the war and adds all the cards on the table to the bottom of their deck. If the face-up cards are again equal then the battle repeats with another set of face-down/up cards.
- # Whoever collect the 52 cards first is declared the winner.
- # Create a "Replay" option.
+'''
+Problem 15 - War Card Game
+- War (also known as Battle in the United Kingdom) is a card game played by two
+players. It uses a standard playing card deck. The objective of the game is to
+win all 52 of the cards.
+- The deck is divided evenly between the players. In unison, the players reveal
+the top card of their deck—this is a "battle"—and the player with the higher
+card takes both of the cards played and moves them to their stack.
+- If the two cards played are of equal value, then there is a "war". Both
+players place the next card of their pile face down (some variants have three
+face down cards) and then another card face-up. The owner of the higher face-up
+card wins the war and adds all the cards on the table to the bottom of their
+deck. If the face-up cards are again equal then the battle repeats with another
+set of face-down/up cards. This repeats until one player's face-up card is
+higher than their opponent's.
+- Give the player the option of replaying the game or quitting. 
+'''
 
 # Original: 5 December 2020
 
@@ -11,27 +22,28 @@
 from inputfiles.Deck import Deck
 from time import sleep
 
+
 def war(deck1, deck2, down1, down2):
     # if there are no more cards in deck from which to draw, auto lose
-    if len(deck1)==0 or len(deck2)==0:
+    if len(deck1) == 0 or len(deck2) == 0:
         return deck1, deck2
-    
+
     # draw top and down cards and remove them from decks
     for i in range(3):
-        if len(deck1)==1:
+        if len(deck1) == 1:
             break
         down1.append(deck1.pop(0))
     for i in range(3):
-        if len(deck2)==1:
+        if len(deck2) == 1:
             break
         down2.append(deck2.pop(0))
     top1 = deck1.pop(0)
     top2 = deck2.pop(0)
-    
+
     # prompt user for some interactivity
     input("On to battle!")
     sleep(0.5)
-    
+
     # print stakes
     print("On the table you put down:")
     for i in range(len(down1)):
@@ -59,7 +71,7 @@ def war(deck1, deck2, down1, down2):
         down1.append(top1)
         down2.append(top2)
         return war(deck1, deck2, down1, down2)
-    
+
 print("Welcome to the War card game. You and your opponent split a deck and play to win the entire deck, card by card. It's a very tedious game based entirely off of luck.")
 input("\nEnter any key to play.\n")
 
@@ -93,10 +105,10 @@ while True:
             print("This means War!\n")
             mydeck, opdeck = war(mydeck, opdeck, mydown, opdown)
 
-        if len(opdeck)==0:
+        if len(opdeck) == 0:
             print("Congratulations! You captured all of the cards. You win!\n")
             break
-        elif len(mydeck)==0:
+        elif len(mydeck) == 0:
             print("You have no more cards in your deck. Your opponent wins this time.\n")
             break
 
@@ -104,4 +116,3 @@ while True:
     if input("Would you like to play again? 'Y' for yes, 'N' for no.\n").replace(" ", "").lower() in ["no", "n"]:
         print("Thank you for playing!")
         break
-

@@ -1,9 +1,13 @@
-# Problem 5: Rock Paper Scissors
- # Create a rock-paper-scissors game.
- # Ask the player to pick rock, paper or scissors.
- # Have the computer chose its move.
- # Compare the choices and decide who wins. 
- # Print the results.
+'''
+Problem 5 - Rock Paper Scissors
+- Create a program that allows the user to play Rock, Paper, Scissors against
+the computer..
+- Ask the player to pick rock, paper, or scissors.
+- Have the computer choose its move at random.
+- Compare the choices and decide who wins.
+- Display a record of the score (e.g. Player: 3 / Computer: 6), and allow the
+player to play again.
+'''
 
 # Original: 24 November 2020
 
@@ -11,6 +15,8 @@ from random import randint
 from time import sleep
 
 options = ("Rock", "Paper", "Scissors", "r", "p", "s")
+
+
 def winner(user, computer):
     # if the user picks rock and the computer picks scissors, user wins
     if user - computer == -2:
@@ -21,7 +27,8 @@ def winner(user, computer):
     # if user > computer, user wins
     elif user > computer:
         return True
-        
+
+
 # score = [player, computer]
 score = [0, 0]
 
@@ -30,7 +37,7 @@ while True:
     # clear plays
     computer = ""
     throw = ""
-    
+
     # repeat until valid option is entered
     while (throw not in options):
         throw = input("Enter rock (r), paper (p), or scissors (s).\n").lower().strip()
@@ -48,7 +55,7 @@ while True:
     sleep(0.75)
     print("Shoot!\n")
     sleep(0.75)
-    
+
     # computer picks and outcome printed
     computer = options[randint(0, 2)]
     print("You throw a " + throw + " against your opponent's " + computer + ".\n")

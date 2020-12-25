@@ -3,8 +3,8 @@
 
 from random import randint
 
+
 class Deck:
-    
     def __init__(self):
         self.face = ["n Ace", " 2", " 3", " 4", " 5", " 6", " 7", "n 8", " 9", " 10", " Jack", " Queen", " King"]
         self.suit = [" of Hearts", " of Diamonds", " of Clubs", " of Spades"]
@@ -12,20 +12,19 @@ class Deck:
 
     # creates a deck, each list within the deck list signifies one card, identified by 3 numbers (face, suit, value)
     def shuffle(self):
-        self.deck = [[card%4, card%13, 10 if card%13 > 9 else card%13+1] for card in range(52)]
+        self.deck = [[card % 4, card % 13, 10 if card % 13 > 9 else card % 13 + 1] for card in range(52)]
 
-##      Original shuffle code:
-##      self.deck = []
-##      for card in range(52):
-##          suit_v = (card % 4)
-##          face_v = (card % 13)
-##          if face_v > 9:
-##              value = 10
-##          else:
-##              value = face_v + 1
-##          self.deck.append([suit_v, face_v, value])
-
-
+'''   Original shuffle code:
+      self.deck = []
+      for card in range(52):
+          suit_v = (card % 4)
+          face_v = (card % 13)
+          if face_v > 9:
+              value = 10
+          else:
+              value = face_v + 1
+          self.deck.append([suit_v, face_v, value])
+'''
     # draw a card from the deck
     def draw(self):
         drawn = self.deck[randint(0, len(self.deck)-1)]

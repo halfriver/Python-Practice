@@ -1,12 +1,19 @@
-# Problem 14: Hangman
- # Create a program that selects a random word and then allows the user to guess it in a game of hangman.
- # Like the real game, there should be blank spots for each letter in the word, and a part of the body should be added each time the user guesses a letter than is not in the answer.
- # You may choose how many wrong turns the user can make until the game ends.
+'''
+Problem 14 - Hangman
+- Create a program that selects a random word and then allows the user to guess
+it in a game of hangman.
+- Like the real game, there should be blank spots for each letter in the word,
+and a part of the body should be added each time the user guesses a letter than
+is not in the answer.
+- You may choose how many wrong guesses the user can make until the game ends.
+- If the player loses, print out the word at the end of the game.
+- Give the player the option of replaying or quitting.
+'''
 
 # Original: 14 Oct 2019
 # Edited: 27 November 2020
 
-from random import choice 
+from random import choice
 
 # dictionary of words
 f = open("inputfiles/P14-dictionary.txt", "r")
@@ -41,13 +48,13 @@ while True:
         while True:
             guess = input("Guess a letter. Or, if you feel lucky, guess the word.\n").lower()
             if guess.isalpha():
-                if len(guess) !=1 and len(guess) < 5:
+                if len(guess) != 1 and len(guess) < 5:
                     print("If you're not guessing the word, then you must enter single letters.")
                     continue
                 break
             else:
                 print("This is not a valid guess. Try again.")
-        
+
         # if the guess is incorrect
         if ((len(guess) == 1 and guess not in word) or (len(guess) > 1 and guess != word)) and guess not in wrong:
             wrong.append(guess)

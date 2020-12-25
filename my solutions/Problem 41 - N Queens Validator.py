@@ -1,16 +1,21 @@
-# Problem 41: N Queens
- # given n, find all the possible positions of n queens positioned on an n by n board such that they do not impede each others' possible movements
- 
+'''
+Problem 41 - N Queens Validator
+- Given n, find all the possible positions of n queens positioned on an n by n
+board such that they do not impede each others' possible movements.
+'''
+
 # Original: 11 December 2019
 # Edited: 08 December 2020
 
 solutions = []
 board_null = []
 
+
 # print the board
 def show_board(board):
     for row in range(len(board)):
         print(board[row])
+
 
 # can a Queen be placed at this spot
 def safe(board, row_index, column_index, n):
@@ -44,6 +49,7 @@ def safe(board, row_index, column_index, n):
     print("safety pass")
     return True
 
+
 # recursive; base case: completed board of safe Queens
 def solve(board, row_index, column_index, n, solutions):
     show_board(board)
@@ -59,12 +65,13 @@ def solve(board, row_index, column_index, n, solutions):
             board[row_index][column] = "-"
     return return_value
 
+
 # the input must be an integer
 while True:
     n = input("Provide a value for n.\n")
     try:
         int(n)
-    except:
+    except ValueError:
         print("The value must be a number. Please try again.")
     else:
         n = int(n)
@@ -92,4 +99,3 @@ solve(board, 0, 0, n, solutions)
 print("For n=" + str(n) + " Queens, there are " + str(len(solutions)) + " solutions.")
 for solution in solutions:
     show_board(board)
-

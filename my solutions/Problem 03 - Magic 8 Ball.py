@@ -1,8 +1,11 @@
-# Problem 3: Magic 8-Ball
- # Simulate a magic 8-ball, allowing the user to enter their question.
- # Display an in progress message(i.e. "thinking").
- # Create responses and show a random response.
- # Allow the user to ask another question or quit.
+'''
+Problem 3 - Magic 8 Ball
+- Simulate a Magic 8-Ball that will answer a user’s questions.
+- Allow the user to input their question.
+- Display an in progress message (i.e. "Thinking...").
+- Create 20 responses, and show one at random.
+- Allow the user to ask another question or quit.
+'''
 
 # Original: 2 Sept 2019
 # Edited: 24 November 2020
@@ -21,10 +24,12 @@ response = ["Very doubtful. \n",
             "Without a doubt. \n",
             "You may rely on it. \n"]
 
+
 def reply():
     print("Divinating...")
     time.sleep(3)
-    print(response[random.randint(0,9)])
+    print(response[random.randint(0, 9)])
+
 
 first = True
 while True:
