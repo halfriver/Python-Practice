@@ -24,7 +24,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |11|[Multiplication Table](#multiplication-table)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2011%20-%20Multiplication%20Table.py)||
 |12|[Fibonacci Sequence](#fibonacci-sequence)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2012%20-%20Fibonacci%20Sequence.py)||
 |13|[Base Jumper](#base-jumper)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2013%20-%20Base%20Jumper.py)||
-|14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|[:construction:](https://github.com/halfriver/Portfolio-Site/blob/master/programming/templates/hangman.html)|
+|14|[Hangman Game](#hangman-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2014%20-%20Hangman.py)|[:heavy_check_mark:](https://github.com/halfriver/Portfolio-Site/blob/master/programming/templates/hangman.html)|
 |15|[War Card Game](#war-card-game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2015%20-%20War%20Card%20Game.py)||
 |16|[Menu Calculator](#menu-calculator)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2016%20-%20Menu%20Calculator.py)||
 |17|[Seat Reservation](#seat-reservation)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2017%20-%20Seat%20Reservation.py)||
@@ -39,16 +39,16 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |26|[Watch for New TIL Facts](#watch-for-new-til-facts)|||
 |27|[Random Wikipedia Article](#random-wikipedia-article)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2027%20-%20Random%20Wikipedia%20Article.py)||
 |28|[What's the Weather?](#whats-the-weather)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2028%20-%20What's%20the%20Weather.py)||
-|29|[Sierpinski Triangle](#sierpinski-triangle)|||
+|29|[Sierpinski Triangle](#sierpinski-triangle)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2029%20-%20Sierpinski%20Triangle.py)||
 |30|[Two Numbers](#two-numbers)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2030%20-%20Two%20Numbers.py)||
 |31|[Chickens and Rabbits](#chickens-and-rabbits)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2031%20-%20Chickens%20and%20Rabbits.py)||
-|32|[FLAMES Game](#FLAMES-Game)|||
-|33|[Pomodoro Timer](#Pomodoro-Timer)|||
+|32|[FLAME Game](#FLAME-Game)|[:construction:]()||
+|33|[Steganography](#steganography)|||
 |34|[Scarne's Dice](#scarnes-dice)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2034%20-%20Scarne's%20Dice.py)||
-|35|[GoogleCase](#GoogleCase)|||
-|36|[Connect4](#Connect4)|||
-|37|[Chess](#ChessGame)|||
-|38|[Movie of the day](#movie-of-the-day)|||
+|35|[2048 Game](#2048-game)|||
+|36|[Connect4](#connect4)|||
+|37|[Chess](#chess)|||
+|38|[Message Encode Decode](#message-encode-decode)|||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2039%20-%20Web%20Scraper.py)||
 |40|[Palindrome](#palindrome)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2040%20-%20Palindrome.py)||
 |41|[N Queens Validator](#n-queens-validator)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2041%20-%20N%20Queens%20Validator.py)||
@@ -65,7 +65,7 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 ### Armstrong Number
 - Define a function that allows the user to check whether a given number is an Armstrong Number (also known as a [Narcissistic Number](https://mathworld.wolfram.com/NarcissisticNumber.html)) or not.
 - Hint: To do this, first determine the number of digits of the given number. Call that n. Then take every digit in the number and raise it to the nth power. Sum them, and if your answer is equal to the original number then it is an Armstrong Number.
-- Example: Take 1634. Four digits. So, `1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup>` = `1 + 1296 + 81 + 256` = `1634` Therefore, 1634 is an Armstrong number.
+- Example: Take 1634. Four digits. So, 1<sup>4</sup> + 6<sup>4</sup> + 3<sup>4</sup> + 4<sup>4</sup> = 1 + 1296 + 81 + 256 = 1634. Therefore, 1634 is an Armstrong number.
 - Tip: All single digit numbers are Armstrong numbers.
 
 ### Magic 8 Ball
@@ -106,7 +106,6 @@ Ever played [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)? If you haven't, 
 - Change the word "a" to "an" when the next word in the sentence begins with a vowel.
 - The story doesn't have to be too long, but it should have some sort of story line.
 - Tip: it's easiest to write out a quick story on a piece of paper or a text file, and then go back through and see which words the user should be able to change.
-
 
 ### Change Calculator
 - Imagine that your friend is a cashier, but has a hard time counting back change to customers.
@@ -158,20 +157,20 @@ If you do not know about the Fibonacci Sequence, read about it [here](https://en
   - Validate that the number entered is valid for the specified base
 
 ### Hangman Game
-- Create a program that selects a random word and then allows the user to guess it in a game of hangman.
+- Create a program that selects a random word and then allows the user to guess it in a game of [hangman](https://en.wikipedia.org/wiki/Hangman_(game)). 
 - Like the real game, there should be blank spots for each letter in the word, and a part of the body should be added each time the user guesses a letter than is not in the answer.
-- You may choose how many wrong turns the user can make until the game ends.
-- Subgoals:
-  - If the user loses, print out the word at the end of the game.
-  - Create a "give up" option.
+- You may choose how many wrong guesses the user can make until the game ends.
+- If the player loses, print out the word at the end of the game.
+- Give the player the option of replaying or quitting. 
+
   
 ### War Card Game 
- - War (also known as Battle in the United Kingdom) is a card game typically played by two players. It uses a standard playing card deck.The objective of the game is to win all of the cards.
- - The deck is divided evenly among the players, giving each a down stack. In unison, each player reveals the top card of their deck—this is a "battle"—and the player with the higher card takes both of the cards played and moves them to their stack. Aces are high, and suits are ignored.
- - If the two cards played are of equal value, then there is a "war".Both players place the next card of their pile face down (some variants have three face down cards) and then another card face-up. The owner of the higher face-up card wins the war and adds all the cards on the table to the bottom of their deck. If the face-up cards are again equal then the battle repeats with another set of face-down/up cards. This repeats until one player's face-up card is higher than their opponent's.
- - Finally, Those who collect the 52 cards at first is declared as the winner !!!
- - Subgoals:
-   - Create a "Replay" option.
+- War (also known as Battle in the United Kingdom) is a card game played by two players. It uses a standard playing card deck. The objective of the game is to win all 52 of the cards.
+- The deck is divided evenly between the players. In unison, the players reveal the top card of their deck—this is a "battle"—and the player with the higher card takes both of the cards played and moves them to their stack. 
+- If the two cards played are of equal value, then there is a "war". Both players place the next card of their pile face down (some variants have three face down cards) and then another card face-up. The owner of the higher face-up card wins the war and adds all the cards on the table to the bottom of their deck. If the face-up cards are again equal then the battle repeats with another set of face-down/up cards. This repeats until one player's face-up card is higher than their opponent's.
+- Give the player the option of replaying the game or quitting. 
+- Hint: for the purpose of this and the Variation of 21 problem, it might be a good idea to implement a common “Deck” class that can be accessed by both programs. 
+
 
 ### Menu Calculator
 Imagine you have started up a small restaurant and are trying to make it easier to take and calculate orders. Since your restaurant only sells 9 different items, you assign each one to a number, as shown below.
@@ -198,8 +197,8 @@ If you've ever been in a concert, you are aware that you buy tickets to be able 
 - Ask the user for the seat number he would want to reserve and reserve it if available. 
 
 ### Dice Rolling Simulator
-By using the random module, Python can do things like pseudo-random number generation.
 - Allow the user to input the amount of sides on a dice and how many times it should be rolled.
+- Using Python’s [random module](https://docs.python.org/3/library/random.html), you can do things like pseudo-random number generation to simulate the randomness of rolling dice.
 - Your program should simulate dice rolls and keep track of how many times each number comes up (this does not have to be displayed).
 - Finally, print out how many times each number came up.
 - Subgoals:
@@ -210,7 +209,7 @@ By using the random module, Python can do things like pseudo-random number gener
   - You are about to play a board game, but you realize you don't have any dice. Fortunately you have this program.
   - 1. Create a program that opens a new window and draws 2 six-sided dice
   - 2. Allow the user to quit, or roll again
-  - Allow the user to select the number of dice to be drawn on screen(1-4) 2. Add up the total of the dice and display it
+  - Allow the user to select the number of dice to be drawn on screen (1-4) 2. Add up the total of the dice and display it
 
 ### Count and Fix Green Eggs and Ham
 Some of you may remember the Dr. Seuss story "Green Eggs and Ham". For those of you that don't remember it or have never heard of it, [here](http://pastebin.com/XMY48CnN) is the story. However, there is a problem with the story: every time the word ‘I’ is used, it is lowercase.
@@ -281,7 +280,7 @@ Since we're all redditors here, let's make something dealing with reddit. If you
 - Create a program that gets information about two different users, and then sees whose most recent post received the most karma.
 - The program should then print out which user received more karma, and what the difference was.
 - This is a pretty open project, so I encourage you to take it further by adding more features if you find it interesting.
-- Remember - Elements in a list are referenced by their index numbers while entries in a dictionary are referenced by their keys.
+- Remember: Elements in a list are referenced by their index numbers while entries in a dictionary are referenced by their keys.
 - Subgoals:
   - Allow the user to put in the name of two different users when the program first begins.
   - If one of the names of the users does not exist (because of a spelling error), print out a message saying so.
@@ -331,7 +330,7 @@ If you would like to know the basics of what an API is, check out [this](http://
 
 ### Sierpinski Triangle
 The [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle) (also with the original orthography Sierpinski), also called the Sierpinski gasket or the Sierpinski Sieve, is a fractal and attractive fixed set with the overall shape of an equilateral triangle, subdivided recursively into smaller equilateral triangles. Originally constructed as a curve, this is one of the basic examples of self-similar sets, i.e., it is a mathematically generated pattern that can be reproducible at any magnification or reduction. It is named after the Polish mathematician _Waclaw Sierpinski_, but appeared as a decorative pattern many centuries prior to the work of Sierpinski.
-- Create and visualize a fractal generator that forms a standard ***sierpinski triangle*** given a user-provided ***depth*** for which the fractal should be generated.
+- Create and visualize a fractal generator that forms a standard ***Sierpinski triangle*** given a user-provided ***depth*** for which the fractal should be generated.
 - Hint: perform this using recursive calls.
 
 ### Two Numbers
@@ -345,45 +344,40 @@ The [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle) (al
 
 ### FLAME Game
 - Write a program which implements [FLAME](https://www.wikihow.com/Play-%22Flame%22).
-- FLAME is an interesting game that people play to learn about their relationships. FLAME is named after the acronym: Friends, Lovers, Affectionate, Marriage, Enemies, and Siblings.
+- Have the user input two names.
+- Display each step of the game as illustrated in the link above. 
 
-### Pomodoro Timer
-- Create a timer that follows the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique).
-- The Pomodoro technique is a time management method used to break down work into 25-minute intervals separated by 5-minute breaks. After every 4 cycles of work, take a longer break of 15-30 minutes. 
+### Steganography 
+[Steganography](https://en.wikipedia.org/wiki/Steganography) is the art of hiding a message into another form such that no one can suspect the existence of the hidden message.
+- For example, a message is hidden inside an image or a video.
+- The project will be useful to hide messages inside the images.
 
 ### Scarne's Dice
 - Make a turn-based dice game where players compete to reach (or exceed) 100 points by rolling a die. 
 - Rolling a 1 scores no points and the roller loses their turn. 
 - Upon rolling a 2 to 6, the player can choose to either reroll or end their turn. Ending their turn adds the number they rolled to the number of points. A player can reroll as many times as they’d like on their turn. 
 
-### GoogleCase
-TO BE REPLACED
+### 2048 Game
+The 2048 game is a single-player game in which the user has to slide the tiles and the tiles with the same number will merge into a single tile with the sum of their two values.
+- The game ends when all the tiles are filled and no more combinations can be made.
 
 ### Connect4
 - [Connect4](https://www.mathsisfun.com/games/connect4.html) is an age old game in which the players take turns dropping colored discs into a seven-column, six-row vertically suspended grid. 
 - The pieces fall straight down, occupying the lowest available space within the column. 
 - The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. 
 
-### ChessGame
+### Chess
 - Make the the game of chess.
 - You’ll start by mapping out both your board and your pieces. Then, you’ll go on to giving specific movements for your pieces. 
 
-### Movie of the day
-- The app makes use of [OMDb REST API](https://www.omdbapi.com/) in order to fetch a random movie upon a user’s request. 
-- Every time the user opens the app, the API gets queried in order to fetch the random movie.
-- The app can also store (in the browser cache or the phone local storage) which movies have already been shown to the user so that it can exclude them from the recommendation sub-system.
+### Message Encode Decode 
+- Create a program that can secure sensitive information by encoding and decode messages using a common key.
+- This is called [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
 ### Website Scraper / Analyzer 
 - Make an app that scrapes the content of a website (its produced HTML code)
-- The app can then check for the absence of important HTML tags for SEO,
-missing alt tags on images, and whether the page has SEO meta tags
-- The app can be made in various languages that support web scraping (or have a library to
-do so), like Python and Java.
+- The app can then check for the absence of important HTML tags for search engine optimization (SEO), missing alt tags on images, and whether the page has SEO meta tags
 - Then the app can give/subtract points and create an overall score.
-- You will learn: 
-    - How a web scraper works
-    - How to traverse the HTML DOM and select elements
-    - What are the important SEO tags and techniques in a web page
 
 ### Palindrome
 - Palindrome means anything that reads the same backwards as forwards.
