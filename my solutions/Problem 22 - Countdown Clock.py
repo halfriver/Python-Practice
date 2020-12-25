@@ -1,7 +1,16 @@
-# Problem 22: Countdown Timer
- # Create a program that allows the user to choose a time and date, and then prints out a message at given intervals (such as every second) that tells the user how much longer there is until the selected time.
- # If the selected time has already passed, have the program tell the user to start over.
- # If your program asks for the year, month, day, hour, etc. separately, allow the user to be able to type in either the month name or its number.
+'''
+Problem 22 - Countdown Clock
+- Define a function that creates a list of all the numbers that are factors of
+the user's number.
+- The numbers in your list should be sorted from least to greatest, and 1 and
+the original number should be included.
+- Remember to consider negative numbers as well as 0.
+- Bonus:
+  - Have the program print the factors of the users number in a comma separated
+  string, without a comma after the last number, and without the brackets of a
+  Python list.
+  - If the user's number is prime, note it.
+'''
 
 # Original: 09 Nov 2019
 # Edited: 01 December 2020
@@ -11,11 +20,11 @@ import time
 import winsound
 
 qs = ["What year?\n",
-     "What month?\n",
-     "What day?\n",
-     "What hour (24 hr clock)?\n",
-     "What minute?\n",
-     "What second?\n"]
+      "What month?\n",
+      "What day?\n",
+      "What hour (24 hr clock)?\n",
+      "What minute?\n",
+      "What second?\n"]
 mnth = (["jan", "january"],
         ["feb", "february"],
         ["mar", "march"],
@@ -29,6 +38,7 @@ mnth = (["jan", "january"],
         ["nov", "november"],
         ["dec", "december"])
 date_input = [1, 1, 1, 0, 0, 0]
+
 
 def within_range(q, num):
     # if year, must be current year or later, cannot be greater than 100 years in future
@@ -67,7 +77,8 @@ def within_range(q, num):
         else:
             print("Please enter a valid time.")
             return False
-    
+
+
 def is_valid(year, month, day):
     try:
         datetime.date(year, month, day)
@@ -76,13 +87,14 @@ def is_valid(year, month, day):
         print("This date does not exist for this given day. ")
         return False
 
+
 # input handling
 while True:
     for q in range(len(qs)):
         date_input[q] = 1
         while True:
             # must be ints
-            x = input(qs[q]).replace(" ","")
+            x = input(qs[q]).replace(" ", "")
             try:
                 date_input[q] = int(x)
             except ValueError:
@@ -98,7 +110,7 @@ while True:
                 else:
                     print("This is not a valid value. Try again.")
                     continue
-            
+
             # must be a value that is in range for its category
             if within_range(q, date_input[q]):
                 if q != 2:
@@ -106,7 +118,7 @@ while True:
                 # the day must be valid for the given year and month
                 elif q == 2 and is_valid(date_input[0], date_input[1], date_input[2]):
                     break
-    
+
     # must be a valid date altogether
     try:
         target = datetime.datetime(date_input[0], date_input[1], date_input[2], date_input[3], date_input[4], date_input[5])
@@ -118,7 +130,7 @@ while True:
         break
     else:
         print("This time has already passed. Please input a future date and time.\n")
-    
+
 # print the countdown
 while target > now:
     time.sleep(1)
@@ -136,5 +148,3 @@ while target > now:
 print("Timer done! You've reached your specified date/time!")
 for i in range(3):
     winsound.Beep(2500, 1000)
-
-
