@@ -5,6 +5,8 @@ Problem 32 - FLAME Game
 - Display each step of the game as illustrated in the link above.
 '''
 
+# Original: 31 December 2020
+
 # input names
 def input_name(string):
     for i in string:
