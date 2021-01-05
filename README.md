@@ -42,11 +42,11 @@ This repository contains a collection of <a href="https://github.com/QuinnKWolte
 |29|[Sierpinski Triangle](#sierpinski-triangle)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2029%20-%20Sierpinski%20Triangle.py)||
 |30|[Two Numbers](#two-numbers)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2030%20-%20Two%20Numbers.py)||
 |31|[Chickens and Rabbits](#chickens-and-rabbits)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2031%20-%20Chickens%20and%20Rabbits.py)||
-|32|[FLAME Game](#FLAME-Game)|[:construction:]()||
+|32|[FLAME Game](#FLAME-Game)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2032%20-%20FLAME.py)||
 |33|[Steganography](#steganography)|||
 |34|[Scarne's Dice](#scarnes-dice)|[:heavy_check_mark:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2034%20-%20Scarne's%20Dice.py)||
-|35|[2048 Game](#2048-game)|||
-|36|[Connect4](#connect4)|||
+|35|[2048 Game](#2048-game)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2035%20-%202048%20Game.py)||
+|36|[Connect4](#connect4)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2036%20-%20Connect4%20Game.py)||
 |37|[Chess](#chess)|||
 |38|[Message Encode Decode](#message-encode-decode)|||
 |39|[Website Scraper / Analyzer](#website-scraper--analyzer)|[:construction:](https://github.com/halfriver/Python-Practice/blob/master/my%20solutions/Problem%2039%20-%20Web%20Scraper.py)||
